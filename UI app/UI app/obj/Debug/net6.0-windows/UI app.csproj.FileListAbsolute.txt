@@ -1,0 +1,21 @@
+C:\Users\QP-202316\Desktop\Devender Projects\UI app\UI app\bin\Debug\net6.0-windows\UI app.exe
+C:\Users\QP-202316\Desktop\Devender Projects\UI app\UI app\bin\Debug\net6.0-windows\UI app.deps.json
+C:\Users\QP-202316\Desktop\Devender Projects\UI app\UI app\bin\Debug\net6.0-windows\UI app.runtimeconfig.json
+C:\Users\QP-202316\Desktop\Devender Projects\UI app\UI app\bin\Debug\net6.0-windows\UI app.dll
+C:\Users\QP-202316\Desktop\Devender Projects\UI app\UI app\bin\Debug\net6.0-windows\UI app.pdb
+C:\Users\QP-202316\Desktop\Devender Projects\UI app\UI app\obj\Debug\net6.0-windows\UI app.csproj.AssemblyReference.cache
+C:\Users\QP-202316\Desktop\Devender Projects\UI app\UI app\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\QP-202316\Desktop\Devender Projects\UI app\UI app\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\QP-202316\Desktop\Devender Projects\UI app\UI app\obj\Debug\net6.0-windows\UI app_MarkupCompile.cache
+C:\Users\QP-202316\Desktop\Devender Projects\UI app\UI app\obj\Debug\net6.0-windows\UI app_MarkupCompile.lref
+C:\Users\QP-202316\Desktop\Devender Projects\UI app\UI app\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\QP-202316\Desktop\Devender Projects\UI app\UI app\obj\Debug\net6.0-windows\UI app.g.resources
+C:\Users\QP-202316\Desktop\Devender Projects\UI app\UI app\obj\Debug\net6.0-windows\UI app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\QP-202316\Desktop\Devender Projects\UI app\UI app\obj\Debug\net6.0-windows\UI app.AssemblyInfoInputs.cache
+C:\Users\QP-202316\Desktop\Devender Projects\UI app\UI app\obj\Debug\net6.0-windows\UI app.AssemblyInfo.cs
+C:\Users\QP-202316\Desktop\Devender Projects\UI app\UI app\obj\Debug\net6.0-windows\UI app.csproj.CoreCompileInputs.cache
+C:\Users\QP-202316\Desktop\Devender Projects\UI app\UI app\obj\Debug\net6.0-windows\UI app.dll
+C:\Users\QP-202316\Desktop\Devender Projects\UI app\UI app\obj\Debug\net6.0-windows\refint\UI app.dll
+C:\Users\QP-202316\Desktop\Devender Projects\UI app\UI app\obj\Debug\net6.0-windows\UI app.pdb
+C:\Users\QP-202316\Desktop\Devender Projects\UI app\UI app\obj\Debug\net6.0-windows\UI app.genruntimeconfig.cache
+C:\Users\QP-202316\Desktop\Devender Projects\UI app\UI app\obj\Debug\net6.0-windows\ref\UI app.dll
