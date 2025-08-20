@@ -1,0 +1,149 @@
+Array
+•	Reverse – Half Thing
+•	Rotate
+•	Prefix Sum
+•	Equilibrium Index (Not including that index) Even Sum = Even Sum Prefix - Odd Sum(i+1) 
+currentEven = preFixSumEven + totalSumOdd - preFixSumOdd - (i % 2 != 0 ? inputs[i] : 0);
+currentOdd = preFixSumOdd + totalSumEven - preFixSumEven - (i % 2 != 0 ? 0 : inputs[i]);
+•	Left Max , Right Max in single loop
+•	Max and Min a single loop
+•	a and G pairs
+•	Max and Min minimum distance
+•	Longest Palindrome
+•	Kaydens - Start from left to right and keep on adding positive even the negative numbers as getting more positive can be there
+•	But Break if total sum gets negative
+•	Rainwater Harvesting
+•	J queries(start end) adding in an empty array or existing array
+•	prefix sum and handling the queries
+•	Merge non overlapping indexes
+•	Find the least missing integer
+•	Sorted row wise find max no of 1 containing 0s and 1s n+m
+
+Sub Array
+•	print all sub array O(N^3) first start second end Print start to end
+•	Find Sum of all subarray Contribution (i+1) * (n-i)
+•	print sum of all subarray
+•	Sub array of size k with target sum
+•	Any subarray sum = 0 
+	
+2D - Array
+	Transpose
+	Rotate different ways
+	Digonal Traversal O(N)
+	
+Bit Operator
+	Difference between N and N-1  -> Unsets the rightmost 1 of N and make all the consecutive digit rightmost of set bit to 1
+	N & N-1 Basically sets all the bits to 0 from rightmost set bit
+	No of times you are able to do this gives you no of set bits if count is 1 then its a Power of 2
+	XOR - if different then Set
+	a ^ a == 0 
+	Upper To Lower  +32 -32 and XOR operator with Shift with 5
+	Unique Element in pair of numbers O(N)
+	
+Hashset/Dictionary
+	If any pair with target sum, count pairs as well
+	Unique element in an array
+
+	
+Subsequence
+	All subsequence
+	
+Linked list
+	Merge Sort 
+	Add head, mid , tail
+	Middle Fast and Slow
+	Remove Circular linked list Fast and Slow then slow and slow
+
+Stacks
+	Undo Redo, back and forward in browser backward and forward stack
+	Pop, Peek, Top
+	Liked List at head
+	Valid Parenthesis
+	No Double character
+	Sort a stack with a stack
+	Find the nearest smallest/greater number(index) right/left of i (Put the indexes on stack)
+	Closest Left Min and Right Min
+		maximum area of rectangle in histogram default left -1 and right min to max size of array
+		sum of all max - min in all the subarray
+			Contribution of each element
+			On any index Nearest min on both side will tell for how many subarray it is max by contribution
+			On any index Nearest max on both side will tell for how many subarray it is min by contribution (left-i)*(right-i)
+			Duplicate case
+
+Seive Algorithm
+	A-B factors - Get Factors array and find common factors.
+		can also be solved by finding GCD and then factors of GCD
+	Prime Numbers
+
+GCD
+
+Factor - root of N one sqrt approach, if multiple then go for SPF array
+
+Pairing a number with another and is divisible by m. Remainder logic i < j Combination Dictionary of possible remainders and List<numbers> or simply the count 
+Try this
+
+Fibonacci time and space complexity
+
+Tower Of Hanoi
+
+Power of a Number Time Complexity
+
+Space Complexity for recursive stack - if 1 in every call , if N space in one call O(N)
+
+Counting Min and Max pair in two different sorted array Ai > Aj i<j . Smaller add karna hi padega	
+
+Stock Prices buy and sell
+		
+Sorting		
+	Stable and Unstable - preserve the position
+	InPlace - No extra space
+	Quick Sort
+	Count Sort O (n+k) array and dictionary
+	Radix Sort
+	Selection Sort
+	Bubble Sort
+	Merge Sort
+	Insertion Sort
+	Inversion Count - Unsorted array
+	Counting Min and Max pair in an array Ai > Aj i<j Solve hoga last step me but have to solve all recursive calls but the 
+	Sorting a string alphabetically - Counting technique 256 + n
+
+Binary Search
+	Unique Element in pair of numbers O(Nlog)
+	Floor of an element <= Index
+	last occurence - first occurance + 1 - Fequency of a number in a sorted array Index
+	Unsorted array but still local minima - Please think again
+	odd number in paired arrangement - XOR approach is order of N , Basically one number 
+	Square Root with O sqrt of N Answer Space
+	log of search space size
+	Get the max subarray of length k where all subarray has a sum with some condition  and array has positive integers only(Answer Space) - log of Search Space Size
+	ath magical number 
+	N Palce M Cows (Aggressive Cows)
+	TTTTFFFF - Binary Search
+	Maximize the minimum
+	Minimize the Maximum
+
+Two Pointer	
+	O(N)Two pointer - Make pointer in such a way that you are not comming back
+	Find Pairs or triplets
+		N^2
+		N log N Binary Search
+		O(N) and S(N)
+
+	a[j] - a[i] = k
+
+	a[i] + a[j] = k
+
+	subarray sum with target sum
+
+	a+b+c = k
+	a+b-c = k
+
+Left Max Right Max
+	water accumulated
+	Rainwater harvesting
+	
+
+	
+
+

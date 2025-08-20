@@ -1,0 +1,69 @@
+Aggregate Function
+
+Sum and Count are also done while grouping
+
+Having can be used on Grouped data
+
+Where is used on the flat data
+
+Window function
+
+Referrer can be deleted but not the one who is being referenced
+
+SELECT Name, Dept, Salary,
+       AVG(Salary) OVER (PARTITION BY Dept) AS AvgDeptSalary
+FROM Employees;
+“For each row → look at its group (window) → compute → attach result”
+
+
+AND on join vs below code
+
+SELECT f.title, fa.actor_id
+FROM film f
+LEFT JOIN film_actor fa 
+    ON f.film_id = fa.film_id
+WHERE fa.actor_id < 10;
+
+
+
+SELECT DISTINCT dept FROM Employees;
+vs
+SELECT dept FROM Employees GROUP BY dept;
+
+
+Distinct vs Group By
+Not Possible
+SELECT DISTINCT name, SUM(salary)
+FROM Employees;
+
+
+SELECT COUNT(DISTINCT dept)
+FROM Employees;
+
+
+SELECT name, dept, salary
+FROM Employees
+ORDER BY dept ASC, salary DESC;
+
+
+SELECT name, dept, salary,
+       RANK() OVER (PARTITION BY dept ORDER BY salary DESC) AS rank_in_dept
+FROM Employees;
+
+
+
+SELECT * FROM Employees
+WHERE salary IS NULL;
+vs
+SELECT * FROM Employees
+WHERE salary = NULL;
+
+Find second highest salary
+Find duplicate records
+Count employees per department
+Difference between COUNT(*) vs COUNT(column)
+Can we use WHERE with aggregate functions? (Trick question)
+
+Truncate
+Drop a table
+Delete

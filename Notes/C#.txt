@@ -1,0 +1,30 @@
+GC
+Object will live till it is being referred basically the root reference
+
+.NET uses a generational, mark-and-compact garbage collector. Objects are allocated on the managed heap and classified into Gen 0, 1, and 2. The GC periodically identifies unreachable objects through root references, marks reachable ones, sweeps unused memory, and compacts the heap to prevent fragmentation.
+
+Garbage Collector is automatically triggered by the CLR when the managed heap reaches a certain allocation threshold, when there is memory pressure, or when explicitly invoked using GC.Collect(). It runs based on memory usage, not time.
+
+Tasks
+	async await 
+	async Tasks
+	Tasks
+	what async does
+	Exception Catching 
+	
+Representational State Transfer - Representation of objects
+
+
+Abstract vs Interface
+
+Assembly NameSpace Class
+
+how db is connected to and configs
+
+.NET is platform independent. How things works. Compilation, Containerisation, Runtime, Package, ENVIORONMENT variable, .env file
+
+Services and Listner
+
+How pool for db works 
+
+How a single function is called multiple time and how thread pool works
