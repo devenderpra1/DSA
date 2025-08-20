@@ -1,0 +1,14 @@
+D:\Devender Projects\Practice\Practice\bin\Debug\net9.0\Practice.exe
+D:\Devender Projects\Practice\Practice\bin\Debug\net9.0\Practice.deps.json
+D:\Devender Projects\Practice\Practice\bin\Debug\net9.0\Practice.runtimeconfig.json
+D:\Devender Projects\Practice\Practice\bin\Debug\net9.0\Practice.dll
+D:\Devender Projects\Practice\Practice\bin\Debug\net9.0\Practice.pdb
+D:\Devender Projects\Practice\Practice\obj\Debug\net9.0\Practice.GeneratedMSBuildEditorConfig.editorconfig
+D:\Devender Projects\Practice\Practice\obj\Debug\net9.0\Practice.AssemblyInfoInputs.cache
+D:\Devender Projects\Practice\Practice\obj\Debug\net9.0\Practice.AssemblyInfo.cs
+D:\Devender Projects\Practice\Practice\obj\Debug\net9.0\Practice.csproj.CoreCompileInputs.cache
+D:\Devender Projects\Practice\Practice\obj\Debug\net9.0\Practice.dll
+D:\Devender Projects\Practice\Practice\obj\Debug\net9.0\refint\Practice.dll
+D:\Devender Projects\Practice\Practice\obj\Debug\net9.0\Practice.pdb
+D:\Devender Projects\Practice\Practice\obj\Debug\net9.0\Practice.genruntimeconfig.cache
+D:\Devender Projects\Practice\Practice\obj\Debug\net9.0\ref\Practice.dll
