@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Devender Projects\\Practice\\Practice\\Practice.csproj",
+      "projectUniqueName": "D:\\My Projects\\Practice\\Practice\\Practice.csproj",
       "projectName": "Practice",
-      "projectPath": "D:\\Devender Projects\\Practice\\Practice\\Practice.csproj",
+      "projectPath": "D:\\My Projects\\Practice\\Practice\\Practice.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Devender Projects\\Practice\\Practice\\obj\\",
+      "outputPath": "D:\\My Projects\\Practice\\Practice\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

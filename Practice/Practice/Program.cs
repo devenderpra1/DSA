@@ -38,8 +38,10 @@ var res = new Result();
 //Console.WriteLine(res.GetHCForGCD(15, 20));
 //Console.WriteLine(res.GetHCForGCD(4, 2));
 
-Console.WriteLine(string.Join(",", res.GetPrimeNumbers(50)));
-res.GetLowestPrimeFactor(50);
+//Console.WriteLine(string.Join(",", res.GetPrimeNumbers(50)));
+//res.GetLowestPrimeFactor(50);
+
+res.GetNumbersOfPrimeFactors(50);
 Console.WriteLine("Hello, World!");
 
 
@@ -826,9 +828,25 @@ class Result
                 Console.WriteLine($"Lowest prime factor of {i} is {lowestFactor[i]}");
         }
     }
-    public List<int> GetFactors()
+    public void GetNumbersOfPrimeFactors(int endIndex)
     {
+        int[] noOfFactors = new int[endIndex + 1];
+        Array.Fill(noOfFactors, 1, 1, endIndex + 1 - 1);
+        noOfFactors[0] = 0;
+        noOfFactors[1] = 1;
 
+        for (int i = 2; i <= endIndex; i++)
+        {
+            for (int j = i; j <= endIndex; j += i) // since I want to see the contribution of all the option which can be a factor
+            {
+                noOfFactors[j] += 1;
+            }
+        }
+
+        for (int i = 0; i <= endIndex; i++)
+        {
+            Console.WriteLine($"No of Factors for {i} is {noOfFactors[i]}");
+        }
     }
     #endregion
 
