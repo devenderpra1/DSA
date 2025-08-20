@@ -1,0 +1,15 @@
+C:\Users\QP-202316\Desktop\Devender Projects\Tests\Tests\bin\Debug\net6.0\Tests.exe
+C:\Users\QP-202316\Desktop\Devender Projects\Tests\Tests\bin\Debug\net6.0\Tests.deps.json
+C:\Users\QP-202316\Desktop\Devender Projects\Tests\Tests\bin\Debug\net6.0\Tests.runtimeconfig.json
+C:\Users\QP-202316\Desktop\Devender Projects\Tests\Tests\bin\Debug\net6.0\Tests.dll
+C:\Users\QP-202316\Desktop\Devender Projects\Tests\Tests\bin\Debug\net6.0\Tests.pdb
+C:\Users\QP-202316\Desktop\Devender Projects\Tests\Tests\obj\Debug\net6.0\Tests.csproj.AssemblyReference.cache
+C:\Users\QP-202316\Desktop\Devender Projects\Tests\Tests\obj\Debug\net6.0\Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\QP-202316\Desktop\Devender Projects\Tests\Tests\obj\Debug\net6.0\Tests.AssemblyInfoInputs.cache
+C:\Users\QP-202316\Desktop\Devender Projects\Tests\Tests\obj\Debug\net6.0\Tests.AssemblyInfo.cs
+C:\Users\QP-202316\Desktop\Devender Projects\Tests\Tests\obj\Debug\net6.0\Tests.csproj.CoreCompileInputs.cache
+C:\Users\QP-202316\Desktop\Devender Projects\Tests\Tests\obj\Debug\net6.0\Tests.dll
+C:\Users\QP-202316\Desktop\Devender Projects\Tests\Tests\obj\Debug\net6.0\refint\Tests.dll
+C:\Users\QP-202316\Desktop\Devender Projects\Tests\Tests\obj\Debug\net6.0\Tests.pdb
+C:\Users\QP-202316\Desktop\Devender Projects\Tests\Tests\obj\Debug\net6.0\Tests.genruntimeconfig.cache
+C:\Users\QP-202316\Desktop\Devender Projects\Tests\Tests\obj\Debug\net6.0\ref\Tests.dll
