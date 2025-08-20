@@ -1,0 +1,15 @@
+C:\Users\QP-202316\Desktop\Devender Projects\TrialAsync\TrialAsync\bin\Debug\net6.0\TrialAsync.exe
+C:\Users\QP-202316\Desktop\Devender Projects\TrialAsync\TrialAsync\bin\Debug\net6.0\TrialAsync.deps.json
+C:\Users\QP-202316\Desktop\Devender Projects\TrialAsync\TrialAsync\bin\Debug\net6.0\TrialAsync.runtimeconfig.json
+C:\Users\QP-202316\Desktop\Devender Projects\TrialAsync\TrialAsync\bin\Debug\net6.0\TrialAsync.dll
+C:\Users\QP-202316\Desktop\Devender Projects\TrialAsync\TrialAsync\bin\Debug\net6.0\TrialAsync.pdb
+C:\Users\QP-202316\Desktop\Devender Projects\TrialAsync\TrialAsync\obj\Debug\net6.0\TrialAsync.csproj.AssemblyReference.cache
+C:\Users\QP-202316\Desktop\Devender Projects\TrialAsync\TrialAsync\obj\Debug\net6.0\TrialAsync.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\QP-202316\Desktop\Devender Projects\TrialAsync\TrialAsync\obj\Debug\net6.0\TrialAsync.AssemblyInfoInputs.cache
+C:\Users\QP-202316\Desktop\Devender Projects\TrialAsync\TrialAsync\obj\Debug\net6.0\TrialAsync.AssemblyInfo.cs
+C:\Users\QP-202316\Desktop\Devender Projects\TrialAsync\TrialAsync\obj\Debug\net6.0\TrialAsync.csproj.CoreCompileInputs.cache
+C:\Users\QP-202316\Desktop\Devender Projects\TrialAsync\TrialAsync\obj\Debug\net6.0\TrialAsync.dll
+C:\Users\QP-202316\Desktop\Devender Projects\TrialAsync\TrialAsync\obj\Debug\net6.0\refint\TrialAsync.dll
+C:\Users\QP-202316\Desktop\Devender Projects\TrialAsync\TrialAsync\obj\Debug\net6.0\TrialAsync.pdb
+C:\Users\QP-202316\Desktop\Devender Projects\TrialAsync\TrialAsync\obj\Debug\net6.0\TrialAsync.genruntimeconfig.cache
+C:\Users\QP-202316\Desktop\Devender Projects\TrialAsync\TrialAsync\obj\Debug\net6.0\ref\TrialAsync.dll
