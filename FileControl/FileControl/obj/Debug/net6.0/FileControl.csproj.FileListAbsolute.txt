@@ -1,0 +1,15 @@
+C:\Users\QP-202316\Desktop\Devender Projects\FileControl\FileControl\bin\Debug\net6.0\FileControl.exe
+C:\Users\QP-202316\Desktop\Devender Projects\FileControl\FileControl\bin\Debug\net6.0\FileControl.deps.json
+C:\Users\QP-202316\Desktop\Devender Projects\FileControl\FileControl\bin\Debug\net6.0\FileControl.runtimeconfig.json
+C:\Users\QP-202316\Desktop\Devender Projects\FileControl\FileControl\bin\Debug\net6.0\FileControl.dll
+C:\Users\QP-202316\Desktop\Devender Projects\FileControl\FileControl\bin\Debug\net6.0\FileControl.pdb
+C:\Users\QP-202316\Desktop\Devender Projects\FileControl\FileControl\obj\Debug\net6.0\FileControl.csproj.AssemblyReference.cache
+C:\Users\QP-202316\Desktop\Devender Projects\FileControl\FileControl\obj\Debug\net6.0\FileControl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\QP-202316\Desktop\Devender Projects\FileControl\FileControl\obj\Debug\net6.0\FileControl.AssemblyInfoInputs.cache
+C:\Users\QP-202316\Desktop\Devender Projects\FileControl\FileControl\obj\Debug\net6.0\FileControl.AssemblyInfo.cs
+C:\Users\QP-202316\Desktop\Devender Projects\FileControl\FileControl\obj\Debug\net6.0\FileControl.csproj.CoreCompileInputs.cache
+C:\Users\QP-202316\Desktop\Devender Projects\FileControl\FileControl\obj\Debug\net6.0\FileControl.dll
+C:\Users\QP-202316\Desktop\Devender Projects\FileControl\FileControl\obj\Debug\net6.0\refint\FileControl.dll
+C:\Users\QP-202316\Desktop\Devender Projects\FileControl\FileControl\obj\Debug\net6.0\FileControl.pdb
+C:\Users\QP-202316\Desktop\Devender Projects\FileControl\FileControl\obj\Debug\net6.0\FileControl.genruntimeconfig.cache
+C:\Users\QP-202316\Desktop\Devender Projects\FileControl\FileControl\obj\Debug\net6.0\ref\FileControl.dll
