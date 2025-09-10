@@ -1,0 +1,25 @@
+Kaydens	- Start from left to right and keep on adding positive even the negative numbers as getting more positive can be there
+But Break if total sum gets negative
+
+Rainwater Harvesting
+
+J queries(start end) adding in an empty array or existing array
+prefix sum and handling the queries
+
+Merge non overlapping indexes
+Find the least missing integer
+Sorted row wise find max no of 1 containing 0s and 1s n+m
+
+A-B factors
+
+Sorting a string alphabetically
+
+Pairing a number with another and is divisible by m.Remainder logic i<j Combination 
+
+Fibonacci time and space complexity
+
+GDC with Recursion
+
+Power of Function Time Complexity
+
+Stable and Unstable

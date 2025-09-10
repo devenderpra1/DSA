@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\deven\\OneDrive\\Desktop\\Devender Projects\\TrialAsync\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{55470DF3-7338-4F73-8B0A-B1616B43F078}|TrialAsync\\TrialAsync.csproj|c:\\users\\deven\\onedrive\\desktop\\devender projects\\trialasync\\trialasync\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55470DF3-7338-4F73-8B0A-B1616B43F078}|TrialAsync\\TrialAsync.csproj|solutionrelative:trialasync\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\deven\\OneDrive\\Desktop\\Devender Projects\\TrialAsync\\TrialAsync\\Program.cs",
+              "RelativeDocumentMoniker": "TrialAsync\\Program.cs",
+              "ToolTip": "C:\\Users\\deven\\OneDrive\\Desktop\\Devender Projects\\TrialAsync\\TrialAsync\\Program.cs",
+              "RelativeToolTip": "TrialAsync\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T12:53:09.206Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

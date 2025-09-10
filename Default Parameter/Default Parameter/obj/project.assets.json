@@ -1,0 +1,91 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "DependentProject/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DependentProject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DependentProject.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DependentProject/1.0.0": {
+      "type": "project",
+      "path": "../ConsoleApp1/DependentProject.csproj",
+      "msbuildProject": "../ConsoleApp1/DependentProject.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "DependentProject >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\deven\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\deven\\source\\repos\\Default Parameter\\Default Parameter\\Default Parameter.csproj",
+      "projectName": "Default Parameter",
+      "projectPath": "C:\\Users\\deven\\source\\repos\\Default Parameter\\Default Parameter\\Default Parameter.csproj",
+      "packagesPath": "C:\\Users\\deven\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\deven\\source\\repos\\Default Parameter\\Default Parameter\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\deven\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\deven\\source\\repos\\Default Parameter\\ConsoleApp1\\DependentProject.csproj": {
+              "projectPath": "C:\\Users\\deven\\source\\repos\\Default Parameter\\ConsoleApp1\\DependentProject.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

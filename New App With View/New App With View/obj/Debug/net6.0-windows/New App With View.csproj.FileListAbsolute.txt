@@ -1,0 +1,21 @@
+C:\Users\QP-202316\Desktop\Devender Projects\New App With View\New App With View\bin\Debug\net6.0-windows\New App With View.exe
+C:\Users\QP-202316\Desktop\Devender Projects\New App With View\New App With View\bin\Debug\net6.0-windows\New App With View.deps.json
+C:\Users\QP-202316\Desktop\Devender Projects\New App With View\New App With View\bin\Debug\net6.0-windows\New App With View.runtimeconfig.json
+C:\Users\QP-202316\Desktop\Devender Projects\New App With View\New App With View\bin\Debug\net6.0-windows\New App With View.dll
+C:\Users\QP-202316\Desktop\Devender Projects\New App With View\New App With View\bin\Debug\net6.0-windows\New App With View.pdb
+C:\Users\QP-202316\Desktop\Devender Projects\New App With View\New App With View\obj\Debug\net6.0-windows\New App With View.csproj.AssemblyReference.cache
+C:\Users\QP-202316\Desktop\Devender Projects\New App With View\New App With View\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\QP-202316\Desktop\Devender Projects\New App With View\New App With View\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\QP-202316\Desktop\Devender Projects\New App With View\New App With View\obj\Debug\net6.0-windows\New App With View_MarkupCompile.cache
+C:\Users\QP-202316\Desktop\Devender Projects\New App With View\New App With View\obj\Debug\net6.0-windows\New App With View_MarkupCompile.lref
+C:\Users\QP-202316\Desktop\Devender Projects\New App With View\New App With View\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\QP-202316\Desktop\Devender Projects\New App With View\New App With View\obj\Debug\net6.0-windows\New App With View.g.resources
+C:\Users\QP-202316\Desktop\Devender Projects\New App With View\New App With View\obj\Debug\net6.0-windows\New App With View.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\QP-202316\Desktop\Devender Projects\New App With View\New App With View\obj\Debug\net6.0-windows\New App With View.AssemblyInfoInputs.cache
+C:\Users\QP-202316\Desktop\Devender Projects\New App With View\New App With View\obj\Debug\net6.0-windows\New App With View.AssemblyInfo.cs
+C:\Users\QP-202316\Desktop\Devender Projects\New App With View\New App With View\obj\Debug\net6.0-windows\New App With View.csproj.CoreCompileInputs.cache
+C:\Users\QP-202316\Desktop\Devender Projects\New App With View\New App With View\obj\Debug\net6.0-windows\New App With View.dll
+C:\Users\QP-202316\Desktop\Devender Projects\New App With View\New App With View\obj\Debug\net6.0-windows\refint\New App With View.dll
+C:\Users\QP-202316\Desktop\Devender Projects\New App With View\New App With View\obj\Debug\net6.0-windows\New App With View.pdb
+C:\Users\QP-202316\Desktop\Devender Projects\New App With View\New App With View\obj\Debug\net6.0-windows\New App With View.genruntimeconfig.cache
+C:\Users\QP-202316\Desktop\Devender Projects\New App With View\New App With View\obj\Debug\net6.0-windows\ref\New App With View.dll

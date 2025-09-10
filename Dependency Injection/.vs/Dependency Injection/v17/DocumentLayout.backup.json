@@ -1,0 +1,132 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\QP-202316\\Desktop\\Devender Projects\\Dependency Injection\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4B360788-B469-4A49-889B-0AD1C0F53482}|Dependency Injection\\Dependency Injection.csproj|c:\\users\\qp-202316\\desktop\\devender projects\\dependency injection\\dependency injection\\tokentests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B360788-B469-4A49-889B-0AD1C0F53482}|Dependency Injection\\Dependency Injection.csproj|solutionrelative:dependency injection\\tokentests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B360788-B469-4A49-889B-0AD1C0F53482}|Dependency Injection\\Dependency Injection.csproj|c:\\users\\qp-202316\\desktop\\devender projects\\dependency injection\\dependency injection\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B360788-B469-4A49-889B-0AD1C0F53482}|Dependency Injection\\Dependency Injection.csproj|solutionrelative:dependency injection\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B360788-B469-4A49-889B-0AD1C0F53482}|Dependency Injection\\Dependency Injection.csproj|c:\\users\\qp-202316\\desktop\\devender projects\\dependency injection\\dependency injection\\tokenprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B360788-B469-4A49-889B-0AD1C0F53482}|Dependency Injection\\Dependency Injection.csproj|solutionrelative:dependency injection\\tokenprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B360788-B469-4A49-889B-0AD1C0F53482}|Dependency Injection\\Dependency Injection.csproj|c:\\users\\qp-202316\\desktop\\devender projects\\dependency injection\\dependency injection\\dihelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B360788-B469-4A49-889B-0AD1C0F53482}|Dependency Injection\\Dependency Injection.csproj|solutionrelative:dependency injection\\dihelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DIHelper.cs",
+              "DocumentMoniker": "C:\\Users\\QP-202316\\Desktop\\Devender Projects\\Dependency Injection\\Dependency Injection\\DIHelper.cs",
+              "RelativeDocumentMoniker": "Dependency Injection\\DIHelper.cs",
+              "ToolTip": "C:\\Users\\QP-202316\\Desktop\\Devender Projects\\Dependency Injection\\Dependency Injection\\DIHelper.cs",
+              "RelativeToolTip": "Dependency Injection\\DIHelper.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAowBYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T12:45:41.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TokenTests.cs",
+              "DocumentMoniker": "C:\\Users\\QP-202316\\Desktop\\Devender Projects\\Dependency Injection\\Dependency Injection\\TokenTests.cs",
+              "RelativeDocumentMoniker": "Dependency Injection\\TokenTests.cs",
+              "ToolTip": "C:\\Users\\QP-202316\\Desktop\\Devender Projects\\Dependency Injection\\Dependency Injection\\TokenTests.cs",
+              "RelativeToolTip": "Dependency Injection\\TokenTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T12:07:31.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TokenProvider.cs",
+              "DocumentMoniker": "C:\\Users\\QP-202316\\Desktop\\Devender Projects\\Dependency Injection\\Dependency Injection\\TokenProvider.cs",
+              "RelativeDocumentMoniker": "Dependency Injection\\TokenProvider.cs",
+              "ToolTip": "C:\\Users\\QP-202316\\Desktop\\Devender Projects\\Dependency Injection\\Dependency Injection\\TokenProvider.cs",
+              "RelativeToolTip": "Dependency Injection\\TokenProvider.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T10:23:22.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\QP-202316\\Desktop\\Devender Projects\\Dependency Injection\\Dependency Injection\\Program.cs",
+              "RelativeDocumentMoniker": "Dependency Injection\\Program.cs",
+              "ToolTip": "C:\\Users\\QP-202316\\Desktop\\Devender Projects\\Dependency Injection\\Dependency Injection\\Program.cs",
+              "RelativeToolTip": "Dependency Injection\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T10:22:35.026Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

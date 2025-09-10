@@ -1,0 +1,15 @@
+C:\Users\QP-202316\Desktop\Devender Projects\Dependency Injection\Dependency Injection\bin\Debug\net6.0\Dependency Injection.exe
+C:\Users\QP-202316\Desktop\Devender Projects\Dependency Injection\Dependency Injection\bin\Debug\net6.0\Dependency Injection.deps.json
+C:\Users\QP-202316\Desktop\Devender Projects\Dependency Injection\Dependency Injection\bin\Debug\net6.0\Dependency Injection.runtimeconfig.json
+C:\Users\QP-202316\Desktop\Devender Projects\Dependency Injection\Dependency Injection\bin\Debug\net6.0\Dependency Injection.dll
+C:\Users\QP-202316\Desktop\Devender Projects\Dependency Injection\Dependency Injection\bin\Debug\net6.0\Dependency Injection.pdb
+C:\Users\QP-202316\Desktop\Devender Projects\Dependency Injection\Dependency Injection\obj\Debug\net6.0\Dependency Injection.csproj.AssemblyReference.cache
+C:\Users\QP-202316\Desktop\Devender Projects\Dependency Injection\Dependency Injection\obj\Debug\net6.0\Dependency Injection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\QP-202316\Desktop\Devender Projects\Dependency Injection\Dependency Injection\obj\Debug\net6.0\Dependency Injection.AssemblyInfoInputs.cache
+C:\Users\QP-202316\Desktop\Devender Projects\Dependency Injection\Dependency Injection\obj\Debug\net6.0\Dependency Injection.AssemblyInfo.cs
+C:\Users\QP-202316\Desktop\Devender Projects\Dependency Injection\Dependency Injection\obj\Debug\net6.0\Dependency Injection.csproj.CoreCompileInputs.cache
+C:\Users\QP-202316\Desktop\Devender Projects\Dependency Injection\Dependency Injection\obj\Debug\net6.0\Dependency Injection.dll
+C:\Users\QP-202316\Desktop\Devender Projects\Dependency Injection\Dependency Injection\obj\Debug\net6.0\refint\Dependency Injection.dll
+C:\Users\QP-202316\Desktop\Devender Projects\Dependency Injection\Dependency Injection\obj\Debug\net6.0\Dependency Injection.pdb
+C:\Users\QP-202316\Desktop\Devender Projects\Dependency Injection\Dependency Injection\obj\Debug\net6.0\Dependency Injection.genruntimeconfig.cache
+C:\Users\QP-202316\Desktop\Devender Projects\Dependency Injection\Dependency Injection\obj\Debug\net6.0\ref\Dependency Injection.dll

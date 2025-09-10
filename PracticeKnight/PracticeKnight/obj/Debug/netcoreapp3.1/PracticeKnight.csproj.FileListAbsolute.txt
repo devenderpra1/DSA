@@ -1,0 +1,14 @@
+C:\Users\deven\source\repos\PracticeKnight\PracticeKnight\bin\Debug\netcoreapp3.1\PracticeKnight.exe
+C:\Users\deven\source\repos\PracticeKnight\PracticeKnight\bin\Debug\netcoreapp3.1\PracticeKnight.deps.json
+C:\Users\deven\source\repos\PracticeKnight\PracticeKnight\bin\Debug\netcoreapp3.1\PracticeKnight.runtimeconfig.json
+C:\Users\deven\source\repos\PracticeKnight\PracticeKnight\bin\Debug\netcoreapp3.1\PracticeKnight.runtimeconfig.dev.json
+C:\Users\deven\source\repos\PracticeKnight\PracticeKnight\bin\Debug\netcoreapp3.1\PracticeKnight.dll
+C:\Users\deven\source\repos\PracticeKnight\PracticeKnight\bin\Debug\netcoreapp3.1\PracticeKnight.pdb
+C:\Users\deven\source\repos\PracticeKnight\PracticeKnight\obj\Debug\netcoreapp3.1\PracticeKnight.csproj.AssemblyReference.cache
+C:\Users\deven\source\repos\PracticeKnight\PracticeKnight\obj\Debug\netcoreapp3.1\PracticeKnight.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\deven\source\repos\PracticeKnight\PracticeKnight\obj\Debug\netcoreapp3.1\PracticeKnight.AssemblyInfoInputs.cache
+C:\Users\deven\source\repos\PracticeKnight\PracticeKnight\obj\Debug\netcoreapp3.1\PracticeKnight.AssemblyInfo.cs
+C:\Users\deven\source\repos\PracticeKnight\PracticeKnight\obj\Debug\netcoreapp3.1\PracticeKnight.csproj.CoreCompileInputs.cache
+C:\Users\deven\source\repos\PracticeKnight\PracticeKnight\obj\Debug\netcoreapp3.1\PracticeKnight.dll
+C:\Users\deven\source\repos\PracticeKnight\PracticeKnight\obj\Debug\netcoreapp3.1\PracticeKnight.pdb
+C:\Users\deven\source\repos\PracticeKnight\PracticeKnight\obj\Debug\netcoreapp3.1\PracticeKnight.genruntimeconfig.cache

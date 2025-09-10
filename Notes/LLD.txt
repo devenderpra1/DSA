@@ -1,0 +1,74 @@
+private attributes are only set in constructor and cannot be used outside
+Client should not know all the details
+BEcause of polymorphism the client can only access a single type but provider can give different type of object
+
+Constructor with base keyword - it doesn't create a new object
+How will compiler know the Copy of Istudent vs student
+Which constructor will be called first and whose property will be filled first
+
+inherited -> base upcasting
+base -> inherited downcasting
+
+SO object creation can be costly 
+- it might require to get values from DB
+so if we want to create simillar object we can have a copy from the prototype
+
+open closed princple bird with a new type
+
+Even if I have base ka object but derived ka ref type we wont be able to actually find propert of derived
+Dependency inversion - no 2 classes should directly talk to interface
+
+Practical factory
+Factory
+Abstract factory
+
+Flutter design and payment design adapter and abstract factory
+
+Dependency inversion -- tightly coupled importing library(payumoney and phone pe)
+
+Code to interface and not an implementation
+
+Adapter design pattern - DI and OCP - Solve the problem of external library  Databases
+
+Different ways to do something strategy design pattern - google maps
+
+observer design pattern flipkart triggers
+
+Deorator is also known as wrapper
+
+vanilla then choclate vs reverse
+HTML Component
+Flutter - Attributes
+Lower toupper tolower
+
+Everything is developed over a base
+What abt if base itself is taken care as addon(Constructor dependency)
+
+Pubg game working - ram storing then changes are shared
+Extrinsic and intrinsic
+Flyweight
+
+Boundary - Internal and external (Rectangle)
+
+Usecase-
+We use verb to represent any action(Oval)
+
+Actor
+User and should be Noun(Man sign)
+
+Includes are not order relation Login -> Report 
+It should be Checkout includes check availability 
+
+Extends Mutiple ways to a same usecase
+
+
+Class Diagram
+Interface Diagram
+Abstract 	
+
+
+Pair of numbers and XOR
+And Unique
+N door N people
+jews vs roman
+

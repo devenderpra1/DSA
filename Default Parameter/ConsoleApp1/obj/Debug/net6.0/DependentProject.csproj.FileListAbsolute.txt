@@ -1,0 +1,14 @@
+C:\Users\deven\source\repos\Default Parameter\ConsoleApp1\bin\Debug\net6.0\DependentProject.exe
+C:\Users\deven\source\repos\Default Parameter\ConsoleApp1\bin\Debug\net6.0\DependentProject.deps.json
+C:\Users\deven\source\repos\Default Parameter\ConsoleApp1\bin\Debug\net6.0\DependentProject.runtimeconfig.json
+C:\Users\deven\source\repos\Default Parameter\ConsoleApp1\bin\Debug\net6.0\DependentProject.dll
+C:\Users\deven\source\repos\Default Parameter\ConsoleApp1\bin\Debug\net6.0\DependentProject.pdb
+C:\Users\deven\source\repos\Default Parameter\ConsoleApp1\obj\Debug\net6.0\DependentProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\deven\source\repos\Default Parameter\ConsoleApp1\obj\Debug\net6.0\DependentProject.AssemblyInfoInputs.cache
+C:\Users\deven\source\repos\Default Parameter\ConsoleApp1\obj\Debug\net6.0\DependentProject.AssemblyInfo.cs
+C:\Users\deven\source\repos\Default Parameter\ConsoleApp1\obj\Debug\net6.0\DependentProject.csproj.CoreCompileInputs.cache
+C:\Users\deven\source\repos\Default Parameter\ConsoleApp1\obj\Debug\net6.0\DependentProject.dll
+C:\Users\deven\source\repos\Default Parameter\ConsoleApp1\obj\Debug\net6.0\refint\DependentProject.dll
+C:\Users\deven\source\repos\Default Parameter\ConsoleApp1\obj\Debug\net6.0\DependentProject.pdb
+C:\Users\deven\source\repos\Default Parameter\ConsoleApp1\obj\Debug\net6.0\DependentProject.genruntimeconfig.cache
+C:\Users\deven\source\repos\Default Parameter\ConsoleApp1\obj\Debug\net6.0\ref\DependentProject.dll

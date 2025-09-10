@@ -1,0 +1,197 @@
+MAC address- Hardware Address
+IP address - network you are conneted to
+
+Intranet
+	Private 
+	and public IP Address
+
+Static IP for server
+
+Dynamic IP can work for Client(Server can be clients as well)
+
+IPV4 - 32 bits
+IPV6 - 128 bits
+
+DNS IP is cofigured on ISP provider
+
+public network and dns
+
+vertical and horizontal scaling
+
+bottleneck in a system
+
+commodity hardware - PC with simple configuration
+
+seasonality of traffic
+
+static Ip - DNS Registration
+
+Gateway Reverse Proxy - also filters incoming request
+Multiple machine should not be registered to DNS and these commodity hardware should not be exposed to outer world
+
+load balancer
+
+stateful - chat gpt , weather
+stateless - calculator
+round robin
+
+ 
+ Since you need to know the context you need to send the request to same server
+ 
+ Load BAlancer needs to know which server are running so each server gives a heartbeat
+ 
+ Hs
+ 
+ Ht
+ 
+ 3 hasing function working this will update the same array
+ 
+ 
+ different machine decoupled system
+ App Server vs database machine
+ 
+ Round trip time(RTT)
+ Latency and its contributor
+ 
+browser cache
+App Server cache
+cache machines - redis
+Global cache network latency
+
+How wto connect two system accross globe but in private like Forti client Anydesk
+RDP	2
+
+How server are maintained at AWS
+
+
+
+Big Static Data
+AKamai - Content Delivery Network
+
+Blob Storage - Binary Large Obj , S3
+
+Cache invalidation Strategy
+
+- Write through cache
+	 cache => DB => Client
+	 write latency is high
+	 cache eviction is high
+	 Read heavy system
+	 
+- Write Back Cache
+	client => Cache
+	on right time the data will be moved to DB, DB can work on session
+	We can lose data
+	
+- Write Around Cache
+	client => DB
+	on right time the data will be moved to cache
+	or cache from DB
+
+StateLess vs stateful scaling
+ 
+ TTL - time to live
+ Cache eviction technology
+ - FIFO
+ - LRU - leaste recently used
+ - MRU
+ 
+ cache loading and making while serving the request
+ 
+ Ranking in Contest
+	- Questions on Appserver cache
+	- Ranking on Result - Scheduled Request(Every minute) at global cache 
+	- When a query from client comes we delegate it to result from global cache 
+	
+GetQuestion is stateless cached at every server
+Ranking is stateless cache at global level
+GetAnswers is stateful and specific Appserver cache(Question ID)
+
+CDN _ networks all over the world
+
+Mutually Exclusive(shard) Colletive Exhaustive
+
+Look into Screenshot
+
+Consistent hashing for DB(individual shard)
+_ all db will have same table but 
+
+Consistent hashing based on user or something which needs to be figured as all the related data for a user should be saved on a single database
+
+Intra Shard vs Inter Shard
+
+Newsfeed the data of other users needs to be update
+- Gather from different shard and make the result and App Server utilisation is heavy
+
+So We need to select the sharding key based on intra sharding key
+
+Pagination Limit SQL keyword
+
+Sharding key for fb is user key so profile will be intra shard
+Newsfeed is inter shard
+Again a single update will void the cache - FAN out problem
+
+redundancy of storing the data will help the intra shard query as all the related data is on the same machine whatever data you want to store
+
+cACHE ALL THE Newsfeed AT ONE PLACE FIFO basis removal
+- if the data is big you will cut down the days instead of two machine
+
+Archival storage - Cold Storage old data is transfered to this DB
+
+CAche cohoerence
+
+Database are sharded and App Server are horizontal scaling
+
+Joins in shards - Done at App Server level if inter shard else csn be done at db level
+
+Archival storage
+
+CAP 
+Consistency - give the latest update or error (Payments)
+Available - System will give you the result but not guaranted the latest value(youtube views)
+Partitioning is Network Partition(Not the shards) basially part away due to network
+
+If everything is on the same machine you will not get a partition case
+
+No system can provide with C and A when partition CP or CA
+
+Look at a system if you create replica of the system and even have teo network connection
+
+Consistency Spectrum
+
+Strong(Immediate) Consistency => Eventual Consistency => Weak Consistency
+(Always updated value) => Can Give you stale value but eventually will give you correct value =>
+
+
+Sharding Consitency
+
+Inter to intra
+
+
+Availability 
+
+999 => 99.9
+9hrs/year down time
+
+
+999 => 99.99
+
+
+PAC ELC theorem
+
+Even if P happens you for A AND C
+Else go for Latency and C
+
+
+Master Slave (Copy of data from actual to other machine)
+Redundany of data but provides fault backup and multiple reads(Read Replias)
+All the writes are done to master and copy are done later(Inconsistent if reads are done from slave).Master dies data is lost
+In master slave if master dies the slave takes place.
+
+
+Only master write is one technique
+
+Gossip protocol(Eventually consistent) - The client will get ok only after master writes to more slaves
+
+Strong consistent if clients are given ok only if all updates are done.(Latency will more)
+

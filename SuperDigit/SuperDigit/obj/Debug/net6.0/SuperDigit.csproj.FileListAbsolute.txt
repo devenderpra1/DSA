@@ -1,0 +1,14 @@
+C:\Users\deven\source\repos\SuperDigit\SuperDigit\bin\Debug\net6.0\SuperDigit.exe
+C:\Users\deven\source\repos\SuperDigit\SuperDigit\bin\Debug\net6.0\SuperDigit.deps.json
+C:\Users\deven\source\repos\SuperDigit\SuperDigit\bin\Debug\net6.0\SuperDigit.runtimeconfig.json
+C:\Users\deven\source\repos\SuperDigit\SuperDigit\bin\Debug\net6.0\SuperDigit.dll
+C:\Users\deven\source\repos\SuperDigit\SuperDigit\bin\Debug\net6.0\SuperDigit.pdb
+C:\Users\deven\source\repos\SuperDigit\SuperDigit\obj\Debug\net6.0\SuperDigit.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\deven\source\repos\SuperDigit\SuperDigit\obj\Debug\net6.0\SuperDigit.AssemblyInfoInputs.cache
+C:\Users\deven\source\repos\SuperDigit\SuperDigit\obj\Debug\net6.0\SuperDigit.AssemblyInfo.cs
+C:\Users\deven\source\repos\SuperDigit\SuperDigit\obj\Debug\net6.0\SuperDigit.csproj.CoreCompileInputs.cache
+C:\Users\deven\source\repos\SuperDigit\SuperDigit\obj\Debug\net6.0\SuperDigit.dll
+C:\Users\deven\source\repos\SuperDigit\SuperDigit\obj\Debug\net6.0\refint\SuperDigit.dll
+C:\Users\deven\source\repos\SuperDigit\SuperDigit\obj\Debug\net6.0\SuperDigit.pdb
+C:\Users\deven\source\repos\SuperDigit\SuperDigit\obj\Debug\net6.0\SuperDigit.genruntimeconfig.cache
+C:\Users\deven\source\repos\SuperDigit\SuperDigit\obj\Debug\net6.0\ref\SuperDigit.dll

@@ -1,0 +1,14 @@
+C:\Users\deven\source\repos\Async and Tasks\Async and Tasks\bin\Debug\net6.0\Async and Tasks.exe
+C:\Users\deven\source\repos\Async and Tasks\Async and Tasks\bin\Debug\net6.0\Async and Tasks.deps.json
+C:\Users\deven\source\repos\Async and Tasks\Async and Tasks\bin\Debug\net6.0\Async and Tasks.runtimeconfig.json
+C:\Users\deven\source\repos\Async and Tasks\Async and Tasks\bin\Debug\net6.0\Async and Tasks.dll
+C:\Users\deven\source\repos\Async and Tasks\Async and Tasks\bin\Debug\net6.0\Async and Tasks.pdb
+C:\Users\deven\source\repos\Async and Tasks\Async and Tasks\obj\Debug\net6.0\Async and Tasks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\deven\source\repos\Async and Tasks\Async and Tasks\obj\Debug\net6.0\Async and Tasks.AssemblyInfoInputs.cache
+C:\Users\deven\source\repos\Async and Tasks\Async and Tasks\obj\Debug\net6.0\Async and Tasks.AssemblyInfo.cs
+C:\Users\deven\source\repos\Async and Tasks\Async and Tasks\obj\Debug\net6.0\Async and Tasks.csproj.CoreCompileInputs.cache
+C:\Users\deven\source\repos\Async and Tasks\Async and Tasks\obj\Debug\net6.0\Async and Tasks.dll
+C:\Users\deven\source\repos\Async and Tasks\Async and Tasks\obj\Debug\net6.0\refint\Async and Tasks.dll
+C:\Users\deven\source\repos\Async and Tasks\Async and Tasks\obj\Debug\net6.0\Async and Tasks.pdb
+C:\Users\deven\source\repos\Async and Tasks\Async and Tasks\obj\Debug\net6.0\Async and Tasks.genruntimeconfig.cache
+C:\Users\deven\source\repos\Async and Tasks\Async and Tasks\obj\Debug\net6.0\ref\Async and Tasks.dll

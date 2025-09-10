@@ -1,0 +1,14 @@
+C:\Users\deven\source\repos\StaticAsync\StaticAsync\bin\Debug\net6.0\StaticAsync.exe
+C:\Users\deven\source\repos\StaticAsync\StaticAsync\bin\Debug\net6.0\StaticAsync.deps.json
+C:\Users\deven\source\repos\StaticAsync\StaticAsync\bin\Debug\net6.0\StaticAsync.runtimeconfig.json
+C:\Users\deven\source\repos\StaticAsync\StaticAsync\bin\Debug\net6.0\StaticAsync.dll
+C:\Users\deven\source\repos\StaticAsync\StaticAsync\bin\Debug\net6.0\StaticAsync.pdb
+C:\Users\deven\source\repos\StaticAsync\StaticAsync\obj\Debug\net6.0\StaticAsync.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\deven\source\repos\StaticAsync\StaticAsync\obj\Debug\net6.0\StaticAsync.AssemblyInfoInputs.cache
+C:\Users\deven\source\repos\StaticAsync\StaticAsync\obj\Debug\net6.0\StaticAsync.AssemblyInfo.cs
+C:\Users\deven\source\repos\StaticAsync\StaticAsync\obj\Debug\net6.0\StaticAsync.csproj.CoreCompileInputs.cache
+C:\Users\deven\source\repos\StaticAsync\StaticAsync\obj\Debug\net6.0\StaticAsync.dll
+C:\Users\deven\source\repos\StaticAsync\StaticAsync\obj\Debug\net6.0\refint\StaticAsync.dll
+C:\Users\deven\source\repos\StaticAsync\StaticAsync\obj\Debug\net6.0\StaticAsync.pdb
+C:\Users\deven\source\repos\StaticAsync\StaticAsync\obj\Debug\net6.0\StaticAsync.genruntimeconfig.cache
+C:\Users\deven\source\repos\StaticAsync\StaticAsync\obj\Debug\net6.0\ref\StaticAsync.dll

@@ -1,0 +1,21 @@
+C:\Users\deven\source\repos\Default Parameter\Default Parameter\bin\Debug\net6.0\DependentProject.deps.json
+C:\Users\deven\source\repos\Default Parameter\Default Parameter\bin\Debug\net6.0\DependentProject.runtimeconfig.json
+C:\Users\deven\source\repos\Default Parameter\Default Parameter\bin\Debug\net6.0\DependentProject.exe
+C:\Users\deven\source\repos\Default Parameter\Default Parameter\bin\Debug\net6.0\Default Parameter.exe
+C:\Users\deven\source\repos\Default Parameter\Default Parameter\bin\Debug\net6.0\Default Parameter.deps.json
+C:\Users\deven\source\repos\Default Parameter\Default Parameter\bin\Debug\net6.0\Default Parameter.runtimeconfig.json
+C:\Users\deven\source\repos\Default Parameter\Default Parameter\bin\Debug\net6.0\Default Parameter.dll
+C:\Users\deven\source\repos\Default Parameter\Default Parameter\bin\Debug\net6.0\Default Parameter.pdb
+C:\Users\deven\source\repos\Default Parameter\Default Parameter\bin\Debug\net6.0\DependentProject.dll
+C:\Users\deven\source\repos\Default Parameter\Default Parameter\bin\Debug\net6.0\DependentProject.pdb
+C:\Users\deven\source\repos\Default Parameter\Default Parameter\obj\Debug\net6.0\Default Parameter.csproj.AssemblyReference.cache
+C:\Users\deven\source\repos\Default Parameter\Default Parameter\obj\Debug\net6.0\Default Parameter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\deven\source\repos\Default Parameter\Default Parameter\obj\Debug\net6.0\Default Parameter.AssemblyInfoInputs.cache
+C:\Users\deven\source\repos\Default Parameter\Default Parameter\obj\Debug\net6.0\Default Parameter.AssemblyInfo.cs
+C:\Users\deven\source\repos\Default Parameter\Default Parameter\obj\Debug\net6.0\Default Parameter.csproj.CoreCompileInputs.cache
+C:\Users\deven\source\repos\Default Parameter\Default Parameter\obj\Debug\net6.0\Default Parameter.csproj.CopyComplete
+C:\Users\deven\source\repos\Default Parameter\Default Parameter\obj\Debug\net6.0\Default Parameter.dll
+C:\Users\deven\source\repos\Default Parameter\Default Parameter\obj\Debug\net6.0\refint\Default Parameter.dll
+C:\Users\deven\source\repos\Default Parameter\Default Parameter\obj\Debug\net6.0\Default Parameter.pdb
+C:\Users\deven\source\repos\Default Parameter\Default Parameter\obj\Debug\net6.0\Default Parameter.genruntimeconfig.cache
+C:\Users\deven\source\repos\Default Parameter\Default Parameter\obj\Debug\net6.0\ref\Default Parameter.dll

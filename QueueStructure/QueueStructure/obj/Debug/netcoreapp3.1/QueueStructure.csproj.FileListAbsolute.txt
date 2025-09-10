@@ -1,0 +1,14 @@
+C:\Users\deven\source\repos\QueueStructure\QueueStructure\bin\Debug\netcoreapp3.1\QueueStructure.exe
+C:\Users\deven\source\repos\QueueStructure\QueueStructure\bin\Debug\netcoreapp3.1\QueueStructure.deps.json
+C:\Users\deven\source\repos\QueueStructure\QueueStructure\bin\Debug\netcoreapp3.1\QueueStructure.runtimeconfig.json
+C:\Users\deven\source\repos\QueueStructure\QueueStructure\bin\Debug\netcoreapp3.1\QueueStructure.runtimeconfig.dev.json
+C:\Users\deven\source\repos\QueueStructure\QueueStructure\bin\Debug\netcoreapp3.1\QueueStructure.dll
+C:\Users\deven\source\repos\QueueStructure\QueueStructure\bin\Debug\netcoreapp3.1\QueueStructure.pdb
+C:\Users\deven\source\repos\QueueStructure\QueueStructure\obj\Debug\netcoreapp3.1\QueueStructure.csproj.AssemblyReference.cache
+C:\Users\deven\source\repos\QueueStructure\QueueStructure\obj\Debug\netcoreapp3.1\QueueStructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\deven\source\repos\QueueStructure\QueueStructure\obj\Debug\netcoreapp3.1\QueueStructure.AssemblyInfoInputs.cache
+C:\Users\deven\source\repos\QueueStructure\QueueStructure\obj\Debug\netcoreapp3.1\QueueStructure.AssemblyInfo.cs
+C:\Users\deven\source\repos\QueueStructure\QueueStructure\obj\Debug\netcoreapp3.1\QueueStructure.csproj.CoreCompileInputs.cache
+C:\Users\deven\source\repos\QueueStructure\QueueStructure\obj\Debug\netcoreapp3.1\QueueStructure.dll
+C:\Users\deven\source\repos\QueueStructure\QueueStructure\obj\Debug\netcoreapp3.1\QueueStructure.pdb
+C:\Users\deven\source\repos\QueueStructure\QueueStructure\obj\Debug\netcoreapp3.1\QueueStructure.genruntimeconfig.cache
