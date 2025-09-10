@@ -14,7 +14,7 @@ A-B factors
 
 Sorting a string alphabetically
 
-Pairing a number with another and is divisible by m.Remainder logic i<j Combination 
+Pairing a number with another and is divisible by m. Remainder logic i < j Combination 
 
 Fibonacci time and space complexity
 
@@ -22,4 +22,12 @@ GDC with Recursion
 
 Power of Function Time Complexity
 
-Stable and Unstable
+Stable and Unstable - preserve the position
+
+InPlace - No extra space
+
+Selection Sort , Unstable InPlace , Make it stable
+
+Bubble Sort , Stable InPlace
+
+Merge Sort - What make in stable and not in and Time Complexity

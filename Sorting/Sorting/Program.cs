@@ -9,11 +9,6 @@ foreach (var i in numberstrin)
 }
 
 
-public static void MergeTwoArray(string word1, string word2)
-{
-
-}
-
 
 foreach (var a in Sorting.MergeSort(new List<int> { 3, 5, 1, 2, 5 }))
 {
@@ -89,12 +84,12 @@ public class Sorting
         int i = 0, j = 0;
         while (i < leftList.Count && j < rightList.Count)
         {
-            if (leftList[i] < rightList[j])
+            if (leftList[i] <= rightList[j])
             {
                 finalList.Add(leftList[i]);
                 i++;
             }
-            else if (leftList[i] >= rightList[j])
+            else if (leftList[i] > rightList[j])
             {
                 finalList.Add(rightList[j]);
                 j++;
