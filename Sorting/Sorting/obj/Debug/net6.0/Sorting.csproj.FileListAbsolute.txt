@@ -12,3 +12,11 @@ C:\Users\deven\source\repos\Sorting\Sorting\obj\Debug\net6.0\refint\Sorting.dll
 C:\Users\deven\source\repos\Sorting\Sorting\obj\Debug\net6.0\Sorting.pdb
 C:\Users\deven\source\repos\Sorting\Sorting\obj\Debug\net6.0\Sorting.genruntimeconfig.cache
 C:\Users\deven\source\repos\Sorting\Sorting\obj\Debug\net6.0\ref\Sorting.dll
+D:\My Projects\Sorting\Sorting\obj\Debug\net6.0\Sorting.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Projects\Sorting\Sorting\obj\Debug\net6.0\Sorting.AssemblyInfoInputs.cache
+D:\My Projects\Sorting\Sorting\obj\Debug\net6.0\Sorting.AssemblyInfo.cs
+D:\My Projects\Sorting\Sorting\obj\Debug\net6.0\Sorting.csproj.CoreCompileInputs.cache
+D:\My Projects\Sorting\Sorting\obj\Debug\net6.0\Sorting.sourcelink.json
+D:\My Projects\Sorting\Sorting\obj\Debug\net6.0\Sorting.dll
+D:\My Projects\Sorting\Sorting\obj\Debug\net6.0\refint\Sorting.dll
+D:\My Projects\Sorting\Sorting\obj\Debug\net6.0\Sorting.pdb

@@ -113,4 +113,97 @@ public class Sorting
         }
         return finalList;
     }
+
+    public static void SelectionSort(IList<int> inputArray)
+    {
+        for (int index = 0; index < inputArray.Count; index++)
+        {
+            // To iterate each index
+            var min = Int32.MaxValue;
+            var swapIndex = -1;
+            for (int currIndex = index; currIndex < inputArray.Count; currIndex++)
+            {
+                // To find Maximum
+                if (inputArray[currIndex] < min)
+                {
+                    min = inputArray[currIndex];
+                    swapIndex = currIndex;
+                }
+            }
+            //Swap
+            var currentElement = inputArray[index];
+            inputArray[index] = inputArray[swapIndex];
+            inputArray[swapIndex] = currentElement;
+        }
+    }
+
+    public static void BubbleSort(IList<int> inputArray)
+    {
+        for (int index = 0; index < inputArray.Count; index++)
+        {
+            for (int j = 0; j < inputArray.Count - index - 1; j++)
+            {
+                if (inputArray[j] < inputArray[j + 1])
+                {
+                    var currentElement = inputArray[j];
+                    inputArray[j] = inputArray[j + 1];
+                    inputArray[j + 1] = currentElement;
+                }
+            }
+        }
+    }
+
+
+    public IList<int> SortAndMerge(IList<int> inputArray)
+    {
+        List<int> sorted = new List<int>();
+        IList<int> currentLeft = new List<int>();
+        IList<int> currentRight = new List<int>();
+
+        for (int counter = 0; counter < inputArray.Count; counter++)
+        {
+            if (counter < inputArray.Count / 2)
+            {
+                currentLeft.Add(inputArray[counter]);
+            }
+            else
+            {
+                currentRight.Add(inputArray[counter]);
+            }
+        }
+        currentLeft = SortAndMerge(currentLeft);
+        currentRight = SortAndMerge(currentRight);
+        int i = 0;
+        int j = 0;
+
+        while (i < currentLeft.Count && j < currentRight.Count)
+        {
+            if (currentLeft[i] < currentRight[j])
+            {
+                sorted.Add(currentLeft[i]);
+                i++;
+            }
+            else
+            {
+                sorted.Add(currentRight[j]);
+                j++;
+            }
+        }
+        if (i < currentLeft.Count + 1)
+        {
+            for (; i < currentLeft.Count; i++)
+            {
+                sorted[i + j] = currentLeft[i];
+            }
+        }
+        else if (j < currentRight.Count + 1)
+        {
+            for (; j < currentRight.Count; j++)
+            {
+                sorted[i + j] = currentRight[j];
+            }
+        }
+        return sorted;
+    }
+
 }
