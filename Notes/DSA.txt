@@ -31,3 +31,6 @@ Selection Sort , Unstable InPlace , Make it stable
 Bubble Sort , Stable InPlace
 
 Merge Sort - What make in stable and not in and Time Complexity
+
+Space Complexity for recursive stack - if 1 in every call , if N space in one call O(N)
+ 
