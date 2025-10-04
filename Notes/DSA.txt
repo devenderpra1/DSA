@@ -12,6 +12,8 @@ Sorted row wise find max no of 1 containing 0s and 1s n+m
 
 A-B factors
 
+Prime Numbers
+
 Sorting a string alphabetically
 
 Pairing a number with another and is divisible by m. Remainder logic i < j Combination 
@@ -33,4 +35,31 @@ Bubble Sort , Stable InPlace
 Merge Sort - What make in stable and not in and Time Complexity
 
 Space Complexity for recursive stack - if 1 in every call , if N space in one call O(N)
- 
+
+Counting Min and Max pair in two different array
+
+Inversion Count
+  
+Insertion Sort
+
+Quick Sort
+
+Count Sort O (n+k) array and dictionary
+
+Binary Search
+
+Floor of an element <=
+
+last occurence - first occurance +1 
+
+Unsorted array but still local minima 
+
+odd number in paired arrangement
+
+Square Root with O sqrt of N	
+
+log of search space size
+
+Get the max subarray of length k where all subarray has a sum with some condition  and array has positive integers only
+
+ath magical

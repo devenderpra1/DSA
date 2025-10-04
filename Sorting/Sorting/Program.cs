@@ -114,45 +114,47 @@ public class Sorting
         return finalList;
     }
 
-    public static void SelectionSort(IList<int> inputArray)
+    public static void MergeSortOptimised(IList<int> inputarray, int leftStart, int rightEnd)
     {
-        for (int index = 0; index < inputArray.Count; index++)
+        if (leftStart >= rightEnd)
+            return;
+        var mid = leftStart + (rightEnd - leftStart) / 2;
+        int[] currentFinalSorted = new int[rightEnd - leftStart + 1];
+
+        MergeSortOptimised(inputarray, leftStart, mid);
+        MergeSortOptimised(inputarray, mid + 1, rightEnd);
+        var i = leftStart;
+        var j = mid + 1;
+        var k = 0;
+        while (i <= mid && j <= rightEnd)
         {
-            // To iterate each index
-            var min = Int32.MaxValue;
-            var swapIndex = -1;
-            for (int currIndex = index; currIndex < inputArray.Count; currIndex++)
+            if (inputarray[i] <= inputarray[j])
             {
-                // To find Maximum
-                if (inputArray[currIndex] < min)
-                {
-                    min = inputArray[currIndex];
-                    swapIndex = currIndex;
-                }
+                currentFinalSorted[k] = inputarray[i];
+                i++;
             }
-            //Swap
-            var currentElement = inputArray[index];
-            inputArray[index] = inputArray[swapIndex];
-            inputArray[swapIndex] = currentElement;
+            else if (inputarray[i] > inputarray[j])
+            {
+                currentFinalSorted[k] = inputarray[j];
+                j++;
+            }
+            k++;
+        }
+        while (i <= mid)
+        {
+            currentFinalSorted[k] = inputarray[i];
+            i++; k++;
+        }
+        while (j <= rightEnd)
+        {
+            currentFinalSorted[k] = inputarray[j];
+            j++;
+        }
+        for (var index = 0; index < currentFinalSorted.Length; index++)
+        {
+            inputarray[leftStart + index] = currentFinalSorted[index];
         }
     }
-
-    public static void BubbleSort(IList<int> inputArray)
-    {
-        for (int index = 0; index < inputArray.Count; index++)
-        {
-            for (int j = 0; j < inputArray.Count - index - 1; j++)
-            {
-                if (inputArray[j] < inputArray[j + 1])
-                {
-                    var currentElement = inputArray[j];
-                    inputArray[j] = inputArray[j + 1];
-                    inputArray[j + 1] = currentElement;
-                }
-            }
-        }
-    }
-
 
     public IList<int> SortAndMerge(IList<int> inputArray)
     {
@@ -205,5 +207,155 @@ public class Sorting
         }
         return sorted;
     }
+
+    public static int InversionCount(IList<int> inputarray, int leftStart, int rightEnd)
+    {
+        if (leftStart >= rightEnd)
+            return 0;
+        var mid = leftStart + (rightEnd - leftStart) / 2;
+
+        var finalSortedArray = new int[rightEnd - leftStart + 1];
+
+        var sortAndCountLeft = InversionCount(inputarray, leftStart, mid);
+        var sortAndCountRight = InversionCount(inputarray, mid + 1, rightEnd);
+
+        var i = leftStart;
+        var j = mid + 1;
+        var k = 0;
+
+        var inversionCountInCommon = 0;
+        while (i <= mid && j <= rightEnd)
+        {
+            if (inputarray[i] <= inputarray[j])
+            {
+                finalSortedArray[k] = inputarray[i];
+                inversionCountInCommon += (j - mid + 1);
+                //this cannot be done as all the left will add up and loop will be closed before adding even first greater element
+                i++;
+            }
+            else
+            {
+                finalSortedArray[k] = inputarray[j];
+                //inversionCountInCommon += (mid - i + 1);
+                j++;
+            }
+            k++;
+        }
+        while (i <= mid)
+        {
+            finalSortedArray[k] = inputarray[i];
+            //inversionCountInCommon += (j - mid + 1);
+            i++; k++;
+        }
+        while (j <= rightEnd)
+        {
+            finalSortedArray[k] = inputarray[j];
+            j++; k++;
+        }
+        for (var index = 0; index < finalSortedArray.Length; index++)
+        {
+            inputarray[leftStart + index] = finalSortedArray[index];
+        }
+        return sortAndCountLeft + sortAndCountRight + inversionCountInCommon;
+    }
+    public static void QuickSort(IList<int> inputArray)
+    {
+        QuickSort(inputArray, 0, inputArray.Count - 1);
+    }
+    public static void QuickSort(IList<int> inputArray, int leftStart, int rightEnd)
+    {
+        var pivot = ReArrangePivot(inputArray, leftStart, rightEnd);
+
+        QuickSort(inputArray, leftStart, pivot - 1);
+        QuickSort(inputArray, pivot + 1, rightEnd);
+    }
+    public static int ReArrangePivot(IList<int> inputArray, int leftStart, int rightEnd)
+    {
+        int i = leftStart + 1;
+        int j = rightEnd;
+        while (i <= j)
+        {
+            if (inputArray[leftStart] > inputArray[i])
+            {
+                i++;
+            }
+            else if (inputArray[j] >= inputArray[leftStart])
+            {
+                j--;
+            }
+            else
+            {
+                Swap(inputArray, i, j);
+                i++; j--;
+            }
+        }
+        Swap(inputArray, leftStart, j);
+        return j;
+
+    }
+    public static void Swap(IList<int> inputArray, int from, int to)
+    {
+        var currentElement = inputArray[from];
+        inputArray[from] = inputArray[to];
+        inputArray[to] = currentElement;
+    }
+
+    public static void SelectionSort(IList<int> inputArray)
+    {
+        for (int index = 0; index < inputArray.Count; index++)
+        {
+            // To iterate each index
+            var min = Int32.MaxValue;
+            var swapIndex = -1;
+            for (int currIndex = index; currIndex < inputArray.Count; currIndex++)
+            {
+                // To find Maximum
+                if (inputArray[currIndex] < min)
+                {
+                    min = inputArray[currIndex];
+                    swapIndex = currIndex;
+                }
+            }
+            //Swap
+            var currentElement = inputArray[index];
+            inputArray[index] = inputArray[swapIndex];
+            inputArray[swapIndex] = currentElement;
+        }
+    }
+
+    public static void BubbleSort(IList<int> inputArray)
+    {
+        for (int index = 0; index < inputArray.Count; index++)
+        {
+            for (int j = 0; j < inputArray.Count - index - 1; j++)
+            {
+                if (inputArray[j] < inputArray[j + 1])
+                {
+                    var currentElement = inputArray[j];
+                    inputArray[j] = inputArray[j + 1];
+                    inputArray[j + 1] = currentElement;
+                }
+            }
+        }
+    }
+
+    public static void InsertionSort(IList<int> inputArray)
+    {
+        for (int i = 0; i < inputArray.Count - 1; i++)
+        {
+            for (int j = i + 1; j > 0; j--)
+            {
+                if (inputArray[j - 1] > inputArray[j])
+                {
+                    var currentElement = inputArray[j - 1];
+                    inputArray[j - 1] = inputArray[j];
+                    inputArray[j] = currentElement;
+                }
+                else
+                    break;
+            }
+        }
+    }
+
 
 }
