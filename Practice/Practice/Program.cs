@@ -49,7 +49,7 @@ class Result
     //Math Operation
     public void GetFactors(int num)
     {
-        for (var i = 0; i * i <= Math.Sqrt(num); i++)
+        for (var i = 0; i * i <= num; i++)
         {
             if (num % i == 0)
             {
@@ -70,7 +70,7 @@ class Result
     public double GetSquareRoot(double num)
     {
         double x = 0;
-        double y = Math.Sqrt(num);
+        double y = num / 2;
 
         while (x <= y)
         {
@@ -115,6 +115,53 @@ class Result
     }
 
     #endregion
+
+
+    public static int GetPriceAtWhichWhereInvestThenSellNextDay(List<int> ratesForEachDay)
+    {
+        if (ratesForEachDay.Count == 0)
+        {
+            return -1;
+        }
+        var previousOption = ratesForEachDay[0];
+        var maxProfit = 0;
+        for (var i = 1; i < ratesForEachDay.Count; i++)
+        {
+            if (previousOption < ratesForEachDay[i])
+            {
+                var currentProfit = ratesForEachDay[i] - previousOption;
+                if (currentProfit > maxProfit)
+                    maxProfit = currentProfit;
+            }
+            previousOption = ratesForEachDay[i];
+        }
+        return maxProfit;
+    }
+
+    public static int GetPriceAtWhichWhenToInvestThenSell(List<int> ratesForEachDay)
+    {
+        if (ratesForEachDay.Count == 0)
+        {
+            return -1;
+        }
+        var minBuy = ratesForEachDay[0];
+        var maxProfit = 0;
+
+        for (var i = 1; i < ratesForEachDay.Count; i++)
+        {
+            if (minBuy > ratesForEachDay[i])
+            {
+                minBuy = ratesForEachDay[i];
+            }
+            else
+            {
+                var currentProfit = ratesForEachDay[i] - minBuy;
+                if (currentProfit > maxProfit)
+                    maxProfit = currentProfit;
+            }
+        }
+        return maxProfit;
+    }
 
     #region
     //Array
@@ -826,9 +873,21 @@ class Result
                 Console.WriteLine($"Lowest prime factor of {i} is {lowestFactor[i]}");
         }
     }
-    public List<int> GetFactors()
+    public List<int> GetFactorsRevision(int num)
     {
-
+        List<int> Factors = new List<int>();
+        for (var i = 1; i * i <= num; i++)
+        {
+            if (i % num == 0)
+            {
+                Factors.Add(i);
+                if (i != num / i)
+                {
+                    Factors.Add(num / i);
+                }
+            }
+        }
+        return Factors;
     }
     #endregion
 

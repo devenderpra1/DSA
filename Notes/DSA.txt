@@ -14,13 +14,16 @@ A-B factors
 
 Prime Numbers
 
-Sorting a string alphabetically
+Factors - if only one sqrt approach, if multiple then go for SPF array
 
-Pairing a number with another and is divisible by m. Remainder logic i < j Combination 
+Sorting a string alphabetically - Counting technique 256 + n
+
+Pairing a number with another and is divisible by m. Remainder logic i < j Combination Dictionary of possible remainders and List<numbers> or simply the count 
+Try this
 
 Fibonacci time and space complexity
 
-GDC with Recursion
+GCD
 
 Power of Function Time Complexity
 
@@ -36,30 +39,44 @@ Merge Sort - What make in stable and not in and Time Complexity
 
 Space Complexity for recursive stack - if 1 in every call , if N space in one call O(N)
 
-Counting Min and Max pair in two different array
+Counting Min and Max pair in two different sorted array Ai > Aj i<j . Smaller add karna hi padega	
 
-Inversion Count
+Stock Prices buy and sell
   
 Insertion Sort
 
+Inversion Count - Unsorted array
+Counting Min and Max pair in an array Ai > Aj i<j Solve hoga last step me but have to solve all recursive calls but the 
+			
 Quick Sort
 
 Count Sort O (n+k) array and dictionary
+
+Radix Sort
 
 Binary Search
 
 Floor of an element <=
 
-last occurence - first occurance +1 
+last occurence - first occurance + 1 - Fequency of a number in a sorted array
 
-Unsorted array but still local minima 
+Unsorted array but still local minima - Please think again
 
-odd number in paired arrangement
+odd number in paired arrangement - XOR approach is order of N , Basically one number 
 
 Square Root with O sqrt of N	
 
 log of search space size
 
-Get the max subarray of length k where all subarray has a sum with some condition  and array has positive integers only
+Get the max subarray of length k where all subarray has a sum with some condition  and array has positive integers only(Answer Space) - log of Search Space Size
 
-ath magical
+ath magical number 
+
+N Palce M Cows (Aggressive Cows)
+
+
+TTTTFFFF - Binary Search
+Maximize the minimum
+Minimize the Maximum
+
+
