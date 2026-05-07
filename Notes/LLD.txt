@@ -72,7 +72,7 @@ And Unique
 N door N people
 jews vs roman
 
-Soft lock - PENDION LOCKED NOT BOOKED
+Soft lock - PENDING LOCKED NOT BOOKED
 
 
 Association - if any item can live without the other
@@ -81,6 +81,6 @@ Composition - if any item can not live without the other
 
 
 TIC TAC TOE
-	Design is for ENtity/ Web app/ Desktop App
+	Design is for Etity/ Web app/ Desktop App
 	
 
