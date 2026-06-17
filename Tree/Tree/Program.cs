@@ -58,7 +58,7 @@ public class BinaryNode
 public class BinaryTree
 {
     BinaryNode head;
-    public class RecursiveBSTHelper
+    public class RecursiveBinaryTreeHelper
     {
         //Left Head Right
         public void InOrderTreeTraversal(BinaryNode node)
@@ -71,15 +71,15 @@ public class BinaryTree
             Console.WriteLine(node.Value);
             InOrderTreeTraversal(node.right);
         }
-        public void InorderTreeTraversal(BinaryNode node, List<int> binaryNodes)
+        public void InOrderTreeTraversal(BinaryNode node, List<int> binaryNodes)
         {
             if (node == null)
             {
                 return;
             }
-            InOrderTreeTraversal(node.left);
+            InOrderTreeTraversal(node.left, binaryNodes);
             binaryNodes.Add(node.Value);
-            InOrderTreeTraversal(node.right);
+            InOrderTreeTraversal(node.right, binaryNodes);
         }
         //Node Left Right
         public void PreOrderTreeTraversal(BinaryNode node)
@@ -92,7 +92,6 @@ public class BinaryTree
             PreOrderTreeTraversal(node.left);
             PreOrderTreeTraversal(node.right);
         }
-
         public void PostOrderTreeTraversal(BinaryNode node)
         {
             if (node == null)
@@ -103,7 +102,6 @@ public class BinaryTree
             PostOrderTreeTraversal(node.right);
             Console.WriteLine(node.Value);
         }
-
         public int HeightOfATree(BinaryNode binaryNode)
         {
             if (binaryNode == null)
@@ -115,7 +113,7 @@ public class BinaryTree
             return 1 + Math.Max(leftHeight, rightHeight);
         }
     }
-    public class IterativeBSTHelper
+    public class IterativeBinaryTreeHelper
     {
         //Left To Right on each Level
         public void LevelOrderTraversal(BinaryNode headNode)
@@ -340,5 +338,230 @@ public class BinaryTree
             currentNode.right = CreateTreePreAndInOrder(preNodePosition, preOrder, inOrder, prestart + noOfItemOnPreLeft + 1, preEnd, inHeadposition + 1, inEnd);
             return currentNode;
         }
+    }
+    public class BinarySearchTree
+    {
+        public BinaryNode SearchNode(BinaryNode head, int value)
+        {
+            if (head == null)
+                return null;
+            if (head.Value == value)
+                return head;
+            if (head.Value >= value)
+            {
+                return SearchNode(head.left, value);
+            }
+            else
+            {
+                return SearchNode(head.right, value);
+            }
+        }
+        public BinaryNode InsertNodeRecursive(BinaryNode head, int value)
+        {
+            if (head == null)
+                return new BinaryNode(value);
+            if (value < head.Value)
+            {
+                head.left = InsertNodeRecursive(head.left, value);
+            }
+            else if (value > head.Value)
+            {
+                head.right = InsertNodeRecursive(head.right, value);
+            }
+            return head;
+        }
+        public BinaryNode InsertNodeIterative(BinaryNode head, int value)
+        {
+            if (head == null)
+            {
+                head = new BinaryNode(value);
+            }
+            else
+            {
+                var parent = head;
+                var current = head;
+                while (current != null)
+                {
+                    parent = current;
+                    if (value < parent.Value)
+                    {
+                        current = current.left;
+                    }
+                    else
+                    {
+                        current = current.right;
+                    }
+                }
+
+                if (value < parent.Value)
+                {
+                    parent.left = new BinaryNode(value);
+                }
+                else
+                {
+                    parent.right = new BinaryNode(value);
+                }
+            }
+            return head;
+        }
+        public BinaryNode DeleteNode(BinaryNode head, int value)
+        {
+            var nodeToDelete = SearchNode(head, value);
+
+            if (nodeToDelete != null)
+            {
+                if (nodeToDelete.right == null || nodeToDelete.right == null)
+                {
+
+                }
+            }
+            return nodeToDelete;
+        }
+
+        public bool isBST(BinaryNode head, int minValue = Int32.MinValue, int max = Int32.MaxValue)
+        {
+            if (head == null)
+            { return true; }
+            if (head.Value < max && head.Value > minValue)
+            {
+                return isBST(head.left, minValue, head.Value - 1) && isBST(head.right, head.Value + 1, max);
+            }
+            return false;
+        }
+    }
+}
+
+public class BinarySearchTree
+{
+
+    //One way is GetInOrder and find the first anomaly where bigger will be present before smaller as any element Swapped will defy this logic.
+    //And larger will come first than the smaller - you will keep i-1 as First and i as second Element
+    //Simmilarly you need to scan the rest of the array finding the anomaly and you can update the second
+    public (int?, int?) FindSwappedNumbersOnTheFly(BinaryNode head)
+    {
+        int? first = null;
+        int? second = null;
+        BinaryNode prevNode = null;
+        FindSwappedNumbersInorder(head, prevNode, ref first, ref second);
+        return (first, second);
+    }
+
+    private void FindSwappedNumbersInorder(BinaryNode current, BinaryNode prevNode, ref int? first, ref int? second)
+    {
+        if (current == null)
+            return;
+        FindSwappedNumbersInorder(current.left, prevNode, ref first, ref second);
+        if (prevNode != null && prevNode.Value > current.Value)
+        {
+            if (first == null) first = prevNode.Value;
+            second = prevNode.Value;
+        }
+        else
+        {
+            prevNode = current;
+            FindSwappedNumbersInorder(current.right, prevNode, ref first, ref second);
+        }
+    }
+
+    public void FindCommonPathBetweenTwoNodes()
+    {
+
+    }
+
+    public List<BinaryNode> FindPath(BinaryNode head, BinaryNode targetNode, bool isBST)
+    {
+        if (head == null)
+        {
+            return new List<BinaryNode>();
+        }
+        Stack<BinaryNode> pathStack = new Stack<BinaryNode>();
+        if (isBST)
+            FindElementBST(head, targetNode, pathStack);
+        else
+            FindElement(head, targetNode, pathStack);
+        return pathStack.ToList();
+    }
+
+    private bool FindElement(BinaryNode head, BinaryNode targetNode, Stack<BinaryNode> pathStack)
+    {
+        if (head == null)
+            return false;
+
+        if (head.Value == targetNode.Value)
+        {
+            return true;
+        }
+
+        if (FindElement(head.left, targetNode, pathStack) || FindElement(head.right, targetNode, pathStack))
+        {
+            pathStack.Push(head);
+            return true;
+        }
+        return false;
+    }
+
+    private bool FindElementBST(BinaryNode head, BinaryNode targetNode, Stack<BinaryNode> pathStack)
+    {
+        if (head == null)
+            return false;
+
+        if (head.Value == targetNode.Value)
+        {
+            return true;
+        }
+
+        if (targetNode.Value < head.Value)
+        {
+            var elementFound = FindElementBST(head.left, targetNode, pathStack);
+            if (elementFound) pathStack.Push(head);
+            return elementFound;
+        }
+        else if (targetNode.Value > head.Value)
+        {
+            var elementFound = FindElementBST(head.right, targetNode, pathStack);
+            if (elementFound) pathStack.Push(head);
+            return elementFound;
+        }
+        return false;
+    }
+
+    //Find 
+    public BinaryNode FindLowestCommonAncestorInBST(BinaryNode head, BinaryNode node1, BinaryNode node2)
+    {
+        if (head == null)
+            return null;
+
+
+        if (node1.Value < head.Value && node2.Value < head.Value)
+        {
+            return FindLowestCommonAncestorInBST(head.left, node1, node2);
+        }
+        else if (node1.Value > head.Value && node2.Value > head.Value)
+        {
+            return FindLowestCommonAncestorInBST(head.left, node1, node2);
+        }
+        else
+        {
+            return head;
+        }
+
+    }
+
+
+
+    public void FindKthSmallestElement()
+    {
+
+    }
+
+    public List<int> MorrisInOrderTraversal()
+    {
+        List<int> result = new List<int>();
+        return result;
+    }
+
+    public void DeleteANode()
+    {
+
     }
 }

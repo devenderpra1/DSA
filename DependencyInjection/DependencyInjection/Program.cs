@@ -45,7 +45,7 @@ class A
     {
         a = 1;
         container.SetValue("A", a);
-        var A_b = container.GetValue("B");
+        A_b = container.GetValue("B");
     }
 }
 

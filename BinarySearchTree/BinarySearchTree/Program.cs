@@ -266,26 +266,29 @@ namespace BinarySearchTree
             return MaxHelper(node.Right);
         }
 
-        private void InsertNode(int value)
+        private void InsertNodeIterative(int value)
         {
+            var newNode = new Node(value);
             if (Head == null)
-                return;
-            var Current = Head;
-            while (true)
             {
-                if (Current == null)
+                Head = newNode;
+                return;
+            }
+            var current = Head;
+            Node parent = null;
+            while (current != null)
+            {
+                parent = current;
+                if (value < current.Value)
                 {
-                    Current = new Node(value);
+                    current = current.Left;
                 }
-                else if (value < Current.Value)
+                else if (value > current.Value)
                 {
-                    InsertNode()
-                }
-                else if (value > Current.Value)
-                {
-
+                    current = current.Right;
                 }
             }
+            parent = newNode;
         }
 
     }

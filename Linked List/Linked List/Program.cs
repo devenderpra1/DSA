@@ -42,6 +42,25 @@ public class LinkedList
     }
 
     //0 based position
+
+    public Node DeleteAtTail(Node head)
+    {
+        if (head == null)
+            return null;
+        if (head.Next == null)
+        {
+            head = null;
+            return head;
+        }
+        var current = head;
+        if (current.Next != null && current.Next.Next != null)
+        {
+            current = current.Next;
+        }
+        var temp = current.Next;
+        current.Next = null;
+        return temp;
+    }
     public bool TryInsertNode(ref Node head, int position, int value)
     {
         if (position == 0)
@@ -135,6 +154,26 @@ public class LinkedList
             Current = tempNext;
         }
         return prevNode;
+    }
+
+    public Node ReverseLinkedListPractice(Node head)
+    {
+        if (head == null)
+        {
+            return null;
+        }
+        var newHead = head;
+        var next = head.Next;
+        Node prev = null;
+        newHead.Next = prev;
+        while (next != null)
+        {
+            prev = newHead;
+            newHead = next;
+            next = newHead.Next;
+            newHead.Next = prev;
+        }
+        return newHead;
     }
     public SpecialNode DeepCloneInterleavingTechnique(SpecialNode head)
     {
@@ -351,9 +390,9 @@ public class LinkedList
         }
         public void RemoveFromCacheAndChain(int identifier)
         {
-            cache.Remove(identifier , out var doublyLinkNode);
+            cache.Remove(identifier, out var doublyLinkNode);
             cache[int.MinValue].Next = doublyLinkNode.Next;
-            doublyLinkNode.Next.Previous = doublyLinkNode.Previous; 
+            doublyLinkNode.Next.Previous = doublyLinkNode.Previous;
         }
 
         public void UpdateLocation(int identifier)

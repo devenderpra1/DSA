@@ -95,6 +95,22 @@ public class Results
         return result;
     }
 
+    public Stack<int> SortAStackWithAStack(Stack<int> input)
+    {
+        var helperStack = new Stack<int>();
+        while (!input.IsEmpty)
+        {
+            var current = input.Pop();
+            while (!helperStack.IsEmpty && current < helperStack.Peek())
+            {
+                input.Push(helperStack.Pop());
+            }
+            //move to other
+            helperStack.Push(current);
+        }
+        return helperStack;
+    }
+
     public int[] GetNearestLeftMax(int[] inputs)
     {
         var result = new int[inputs.Length];
