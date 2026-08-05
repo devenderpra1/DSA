@@ -205,3 +205,17 @@ Isolation
 
 SQL guarauntee ACID on a single machine not accross shards so sharding is done according to   
 
+
+No SQL Working
+Read Write Update Delete
+Fixed Size of Pagination
+Write Ahead Of Log
+Main Memory Snapshot(Dictionary) - Dictionary can always be made once again after Power restores(Mem Table)
+No Duplicates because eventuality of dictionary will be stored as a page in secondary Memory
+Mem table are always backed up before converted to a page(SS table Sorted String Table)
+Sorted Dictionary as mem table
+Compaction for two SS Table - Latest is available in Mem Remove the Values from SS table and Keep value of latest version
+Compaction Remove Duplicates
+You cannot split the entries across a block 
+you can have multiple items in a block
+Indexing - array of first key in a block - To help with Binary Search Instead of reading entire SS table we can find and read that particular block

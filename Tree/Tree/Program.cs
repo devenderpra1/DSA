@@ -476,13 +476,13 @@ public class BinarySearchTree
         }
         Stack<BinaryNode> pathStack = new Stack<BinaryNode>();
         if (isBST)
-            FindElementBST(head, targetNode, pathStack);
+            FindElementInBSTWithPath(head, targetNode, pathStack);
         else
-            FindElement(head, targetNode, pathStack);
+            FindElementWithPath(head, targetNode, pathStack);
         return pathStack.ToList();
     }
 
-    private bool FindElement(BinaryNode head, BinaryNode targetNode, Stack<BinaryNode> pathStack)
+    private bool FindElementWithPath(BinaryNode head, BinaryNode targetNode, Stack<BinaryNode> pathStack)
     {
         if (head == null)
             return false;
@@ -492,7 +492,7 @@ public class BinarySearchTree
             return true;
         }
 
-        if (FindElement(head.left, targetNode, pathStack) || FindElement(head.right, targetNode, pathStack))
+        if (FindElementWithPath(head.left, targetNode, pathStack) || FindElementWithPath(head.right, targetNode, pathStack))
         {
             pathStack.Push(head);
             return true;
@@ -500,7 +500,7 @@ public class BinarySearchTree
         return false;
     }
 
-    private bool FindElementBST(BinaryNode head, BinaryNode targetNode, Stack<BinaryNode> pathStack)
+    private bool FindElementInBSTWithPath(BinaryNode head, BinaryNode targetNode, Stack<BinaryNode> pathStack)
     {
         if (head == null)
             return false;
@@ -512,20 +512,19 @@ public class BinarySearchTree
 
         if (targetNode.Value < head.Value)
         {
-            var elementFound = FindElementBST(head.left, targetNode, pathStack);
+            var elementFound = FindElementInBSTWithPath(head.left, targetNode, pathStack);
             if (elementFound) pathStack.Push(head);
             return elementFound;
         }
         else if (targetNode.Value > head.Value)
         {
-            var elementFound = FindElementBST(head.right, targetNode, pathStack);
+            var elementFound = FindElementInBSTWithPath(head.right, targetNode, pathStack);
             if (elementFound) pathStack.Push(head);
             return elementFound;
         }
         return false;
     }
 
-    //Find 
     public BinaryNode FindLowestCommonAncestorInBST(BinaryNode head, BinaryNode node1, BinaryNode node2)
     {
         if (head == null)
@@ -544,14 +543,16 @@ public class BinarySearchTree
         {
             return head;
         }
-
     }
 
-
-
-    public void FindKthSmallestElement()
+    public void FindKthSmallestElement(BinaryNode head, ref int position)
     {
-
+        if (head == null)
+        {
+            return;
+        }
+        FindKthSmallestElement(head.left, ref position);
+        FindKthSmallestElement(head.right, ref position);
     }
 
     public List<int> MorrisInOrderTraversal()
@@ -560,8 +561,128 @@ public class BinarySearchTree
         return result;
     }
 
-    public void DeleteANode()
+    public void DeleteANodeInBST(BinaryNode root, BinaryNode nodeToDelete, BinaryNode prevNode = null)
     {
+        if (root == null)
+        {
+            return;
+        }
+        else if (root == nodeToDelete)
+        {
+            var wasLeft = prevNode.left == nodeToDelete;
+            if (root.left == null && root.right == null)
+            {
+                if (wasLeft)
+                {
+                    prevNode.left = null;
+                }
+                else
+                {
+                    prevNode.right = null;
+                }
+            }
+            else if (root.left == null)
+            {
+                if (wasLeft)
+                {
+                    prevNode.left = nodeToDelete.right;
+                }
+                else
+                {
+                    prevNode.right = nodeToDelete.right;
+                }
+            }
+            else if (root.right == null)
+            {
+                if (wasLeft)
+                {
+                    prevNode.left = nodeToDelete.left;
+                }
+                else
+                {
+                    prevNode.right = nodeToDelete.left;
+                }
+            }
+            else
+            {
+                var inorderSuccessor = nodeToDelete.left;
+                while (inorderSuccessor.right != null)
+                {
+                    inorderSuccessor = inorderSuccessor.right;
+                }
+                if (wasLeft)
+                {
+                    prevNode.left = inorderSuccessor;
+                    inorderSuccessor.right = nodeToDelete.right;
+                    inorderSuccessor.left = nodeToDelete.left;
+                }
+                else
+                {
+                    prevNode.right = inorderSuccessor;
+                    inorderSuccessor.right = nodeToDelete.right;
+                    inorderSuccessor.left = nodeToDelete.left;
+                }
+                DeleteANodeInBST(inorderSuccessor, nodeToDelete);
+            }
+        }
+        else if (root.Value < nodeToDelete.Value)
+        {
+            prevNode = root;
+            DeleteANodeInBST(root.right, nodeToDelete, prevNode);
+        }
+        else if (root.Value > nodeToDelete.Value)
+        {
+            prevNode = root;
+            DeleteANodeInBST(root.right, nodeToDelete, prevNode);
+        }
+    }
 
+    public BinaryNode ConstructBinaryTreeFromPostAndInOrder(List<BinaryNode> postOrder, List<BinaryNode> inOrder)
+    {
+        var inOrderNodePosition = new Dictionary<int, int>();
+        for (int i = 0; i < inOrder.Count; i++)
+        {
+            inOrderNodePosition[inOrder[i].Value] = i;
+        }
+        return ConstructBinaryTreeFromPreAndInOrder(postOrder, inOrder, inOrderNodePosition, 0, postOrder.Count - 1, 0, postOrder.Count - 1);
+    }
+
+    public BinaryNode ConstructBinaryTreeFromPreAndInOrder(List<BinaryNode> preOrder, List<BinaryNode> inOrder, Dictionary<int, int> inOrderNodePosition, int inStart, int inEnd, int preStart, int preEnd)
+    {
+        if (inStart > inEnd)
+            return null;
+        var currentNode = preOrder[preStart];
+        var inHeadposition = inOrderNodePosition[currentNode.Value];
+        int noOfItemOnPreLeft = (inHeadposition - 1) - inStart + 1;
+        currentNode.left = ConstructBinaryTreeFromPreAndInOrder(preOrder, inOrder, inOrderNodePosition, inStart, inHeadposition - 1, preStart + 1, preStart + noOfItemOnPreLeft);
+        currentNode.right = ConstructBinaryTreeFromPreAndInOrder(preOrder, inOrder, inOrderNodePosition, inHeadposition + 1, inEnd, preStart + noOfItemOnPreLeft + 1, preEnd);
+        return currentNode;
+
+    }
+
+    public void InOrderTraversal(BinaryNode head, List<int> result)
+    {
+        if (head == null)
+            return;
+        var currentNode = head;
+
+        var stack = new Stack<BinaryNode>();
+        stack.Push(currentNode);
+
+        while (currentNode != null)
+        {
+            while (currentNode.left != null)
+            {
+                stack.Push(currentNode.left);
+                currentNode = currentNode.left;
+            }
+            currentNode = stack.Pop();
+            result.Add(currentNode.Value);
+            if (currentNode.right != null)
+            {
+                stack.Push(currentNode.right);
+                currentNode = currentNode.right;
+            }
+        }
     }
 }
