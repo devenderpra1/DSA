@@ -206,7 +206,7 @@ Isolation
 SQL guarauntee ACID on a single machine not accross shards so sharding is done according to   
 
 
-No SQL Working
+No SQL Working(LSM Trees (Log Structured Merged trees))
 Read Write Update Delete
 Fixed Size of Pagination
 Write Ahead Of Log
