@@ -85,7 +85,6 @@ public class Arrays
         return maxSum;
     }
 
-
     public static int KadaneWithPositiveSum(int[] input)
     {
         if (input == null || !input.Any())
@@ -120,5 +119,23 @@ public class Arrays
         }
 
         return maxSum;
+    }
+
+    public static int MinSubArrayLen(int target, int[] nums)
+    {
+        int left = 0;
+        var sum = 0;
+        var min = int.MaxValue;
+        for (var right = 0; right < nums.Length; right++)
+        {
+            sum += nums[right];
+            while (sum >= target)
+            {
+                min = Math.Min(min, right - left + 1);
+                sum -= nums[left];
+                left++;
+            }
+        }
+        return min == int.MaxValue ? 0 : min;
     }
 }

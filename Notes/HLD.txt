@@ -185,7 +185,7 @@ Else go for Latency and C
 
 
 Master Slave (Copy of data from actual to other machine)
-Redundany of data but provides fault backup and multiple reads(Read Replias)
+Redundancy of data but provides fault backup and multiple reads(Read Replias)
 All the writes are done to master and copy are done later(Inconsistent if reads are done from slave).Master dies data is lost
 In master slave if master dies the slave takes place.
 
@@ -200,7 +200,7 @@ Strong consistent if clients are given ok only if all updates are done.(Latency 
 
 ACID
 Atomicity
-Consitency
+Consistency
 Isolation
 
 SQL guarauntee ACID on a single machine not accross shards so sharding is done according to   
@@ -219,3 +219,8 @@ Compaction Remove Duplicates
 You cannot split the entries across a block 
 you can have multiple items in a block
 Indexing - array of first key in a block - To help with Binary Search Instead of reading entire SS table we can find and read that particular block
+
+WebSockets vs Http long poll(Is timeout happens)
+Document Db Key value pair to Wide column Database
+
+

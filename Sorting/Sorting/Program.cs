@@ -23,40 +23,75 @@ Sorting.MergeSort(new List<int> { 3, 5, 1, 2 }).ForEach(x => Console.WriteLine(x
 
 public static class Sorting
 {
-    public static string MergeTwoArray(string word1, string word2)
+    public static void MergeTwoArrayInPlace(List<int> nums1, int m, List<int> nums2, int n)
+    {
+        int i = m-1, j = n-1, k = m + n;
+
+        while (i >= 0 && j >= 0)
+        {
+            if (nums1[i] >= nums2[j])
+            {
+                nums1[k] = nums1[i];
+                i--;
+            }
+            else
+            {
+                nums1[k] = nums2[j];
+                j--;
+            }
+            k--;
+        }
+        if (i >= 0)
+        {
+            for (; i >= 0; i--)
+            {
+                nums1[k] = nums1[i];
+                k--;
+            }
+        }
+        if (j >= 0)
+        {
+            for (; j > 0; j--)
+            {
+                nums1[k] = nums2[j];
+                k--;
+            }
+        }
+    }
+    public static int[] MergeTwoArray(List<int> nums1, int m, List<int> nums2, int n)
     {
         int i = 0, j = 0;
-        char[] newWord = new char[word1.Length + word2.Length];
-        while (i < word1.Length && j < word2.Length)
+        int[] resultant = new int[m + n];
+        while (i < m && j < n)
         {
-            if (i <= j)
+            if (nums1[i] <= nums2[j])
             {
-                newWord[i + j] = word1[i];
+                resultant[i + j] = nums1[i];
                 i++;
             }
             else
             {
-                newWord[i + j] = word2[j];
+                resultant[i + j] = nums2[j];
                 j++;
             }
         }
-        if (i < word1.Length)
+        if (i < m)
         {
-            for (int k = i; k < word1.Length; k++)
+            for (int k = i; k < m; k++)
             {
-                newWord[i + j] = word1[i];
+                resultant[i + j] = nums1[i];
                 i++;
             }
         }
-        if (j < word2.Length)
+        if (j < n)
         {
-            for (int k = j; k < word1.Length; k++)
+            for (int k = j; k < n; k++)
             {
-                newWord[i + j] = word2[j];
+                resultant[i + j] = nums2[j];
                 j++;
             }
         }
-        return new string(newWord);
+        return resultant;
     }
     public static List<int> MergeSort(List<int> input)
     {

@@ -1,62 +1,62 @@
 ﻿
 // Stacks using Linked List
 
-public class Stack<T>
-{
-    public class Node
-    {
-        public Node(T value)
-        {
-            Value = value;
-        }
+//public class Stack<T>
+//{
+//    public class Node
+//    {
+//        public Node(T value)
+//        {
+//            Value = value;
+//        }
 
-        public Node(T value, Node nextNode)
-            : this(value)
-        {
-            this.Next = nextNode;
-        }
+//        public Node(T value, Node nextNode)
+//            : this(value)
+//        {
+//            this.Next = nextNode;
+//        }
 
-        public T Value;
+//        public T Value;
 
-        public Node Next;
-    }
-    public Stack()
-    {
-        top = null;
-    }
+//        public Node Next;
+//    }
+//    public Stack()
+//    {
+//        top = null;
+//    }
 
-    private Node top;
+//    private Node top;
 
-    public T Peek()
-    {
-        if (top == null)
-            throw new NotImplementedException("No Element in Stack");
-        return top.Value;
-    }
+//    public T Peek()
+//    {
+//        if (top == null)
+//            throw new NotImplementedException("No Element in Stack");
+//        return top.Value;
+//    }
 
-    public T Push(T value)
-    {
-        if (top == null)
-            top = new Node(value);
-        else
-        {
-            var node = new Node(value);
-            node.Next = top;
-            top = node;
-        }
-        return top.Value;
-    }
-    public T Pop()
-    {
-        if (top == null)
-            throw new NotImplementedException("No Element in Stack");
-        var removedNode = top;
-        removedNode.Next = null;
-        top = top.Next;
-        return removedNode.Value;
-    }
-    public bool IsEmpty { get { return top == null; } }
-}
+//    public T Push(T value)
+//    {
+//        if (top == null)
+//            top = new Node(value);
+//        else
+//        {
+//            var node = new Node(value);
+//            node.Next = top;
+//            top = node;
+//        }
+//        return top.Value;
+//    }
+//    public T Pop()
+//    {
+//        if (top == null)
+//            throw new NotImplementedException("No Element in Stack");
+//        var removedNode = top;
+//        removedNode.Next = null;
+//        top = top.Next;
+//        return removedNode.Value;
+//    }
+//    public bool IsEmpty { get { return top == null; } }
+//}
 
 public class Results
 {
@@ -197,5 +197,39 @@ public class Results
             totalSum += maxContribution - minContribution;
         }
         return totalSum;
+    }
+
+    public bool IsValid(string s)
+    {
+        Dictionary<char, char> brackets = new Dictionary<char, char>
+        {
+            { ')', '(' },
+            { '}', '{' },
+            { ']', '[' }
+        };
+
+        Stack<char> stack = new Stack<char>();
+        foreach (char c in s)
+        {
+            if (brackets.TryGetValue(c, out char reqdOpening))
+            {
+                if (stack.TryPop(out char prevOpening))
+                {
+                    if (prevOpening != reqdOpening)
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                stack.Push(c);
+            }
+        }
+        return stack.Count > 0 ? false : true;
     }
 }

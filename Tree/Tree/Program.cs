@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Collections;
 using System.Reflection.Metadata.Ecma335;
 
 Console.WriteLine("Hello, World!");
@@ -13,20 +14,20 @@ public class BinaryNode
 
     public BinaryNode(int value)
     {
-        this.Value = value;
+        this.val = value;
     }
 
     public BinaryNode right;
     public BinaryNode left;
 
-    public int Value;
+    public int val;
 
     public override bool Equals(object? obj)
     {
         if (obj == null || obj is not BinaryNode)
             return false;
 
-        return this.Value == ((BinaryNode)obj).Value;
+        return this.val == ((BinaryNode)obj).val;
     }
 
     public class BinaryNodeBuilder
@@ -68,7 +69,7 @@ public class BinaryTree
                 return;
             }
             InOrderTreeTraversal(node.left);
-            Console.WriteLine(node.Value);
+            Console.WriteLine(node.val);
             InOrderTreeTraversal(node.right);
         }
         public void InOrderTreeTraversal(BinaryNode node, List<int> binaryNodes)
@@ -78,7 +79,7 @@ public class BinaryTree
                 return;
             }
             InOrderTreeTraversal(node.left, binaryNodes);
-            binaryNodes.Add(node.Value);
+            binaryNodes.Add(node.val);
             InOrderTreeTraversal(node.right, binaryNodes);
         }
         //Node Left Right
@@ -88,7 +89,7 @@ public class BinaryTree
             {
                 return;
             }
-            Console.WriteLine(node.Value);
+            Console.WriteLine(node.val);
             PreOrderTreeTraversal(node.left);
             PreOrderTreeTraversal(node.right);
         }
@@ -100,7 +101,7 @@ public class BinaryTree
             }
             PostOrderTreeTraversal(node.left);
             PostOrderTreeTraversal(node.right);
-            Console.WriteLine(node.Value);
+            Console.WriteLine(node.val);
         }
         public int HeightOfATree(BinaryNode binaryNode)
         {
@@ -111,6 +112,17 @@ public class BinaryTree
             var rightHeight = HeightOfATree(binaryNode.right);
 
             return 1 + Math.Max(leftHeight, rightHeight);
+        }
+
+        public int FindHeight(BinaryNode root)
+        {
+            if (root == null)
+            {
+                return -1;
+            }
+            var leftHeight = FindHeight(root.left);
+            var rightHeight = FindHeight(root.right);
+            return Math.Max(leftHeight, rightHeight) + 1;
         }
     }
     public class IterativeBinaryTreeHelper
@@ -127,7 +139,7 @@ public class BinaryTree
                     queue.Enqueue(currentNode.left);
                 if (currentNode.right != null)
                     queue.Enqueue(currentNode.right);
-                Console.WriteLine(currentNode.Value);
+                Console.WriteLine(currentNode.val);
             }
         }
         public List<BinaryNode> LevelOrderTraversalLeftToRight(BinaryNode headNode)
@@ -345,9 +357,9 @@ public class BinaryTree
         {
             if (head == null)
                 return null;
-            if (head.Value == value)
+            if (head.val == value)
                 return head;
-            if (head.Value >= value)
+            if (head.val >= value)
             {
                 return SearchNode(head.left, value);
             }
@@ -360,11 +372,11 @@ public class BinaryTree
         {
             if (head == null)
                 return new BinaryNode(value);
-            if (value < head.Value)
+            if (value < head.val)
             {
                 head.left = InsertNodeRecursive(head.left, value);
             }
-            else if (value > head.Value)
+            else if (value > head.val)
             {
                 head.right = InsertNodeRecursive(head.right, value);
             }
@@ -383,7 +395,7 @@ public class BinaryTree
                 while (current != null)
                 {
                     parent = current;
-                    if (value < parent.Value)
+                    if (value < parent.val)
                     {
                         current = current.left;
                     }
@@ -393,7 +405,7 @@ public class BinaryTree
                     }
                 }
 
-                if (value < parent.Value)
+                if (value < parent.val)
                 {
                     parent.left = new BinaryNode(value);
                 }
@@ -404,29 +416,102 @@ public class BinaryTree
             }
             return head;
         }
-        public BinaryNode DeleteNode(BinaryNode head, int value)
+        public BinaryNode DeleteNode(BinaryNode root, int key)
         {
-            var nodeToDelete = SearchNode(head, value);
-
-            if (nodeToDelete != null)
+            if (root == null)
             {
-                if (nodeToDelete.right == null || nodeToDelete.right == null)
-                {
-
-                }
+                return null;
             }
-            return nodeToDelete;
-        }
+            if (key == root.val)
+            {
+                if (root.right == null && root.left == null)
+                {
+                    return null;
+                }
+                else if (root.right == null)
+                {
+                    return root.left;
+                }
+                else if (root.left == null)
+                {
+                    return root.right;
+                }
+                else
+                {
+                    var nodeToSwap = FindInOrderPredecessor(root);
+                    root.val = nodeToSwap.val;
+                    root.left = DeleteNode(root.left, nodeToSwap.val);
+                }
 
+            }
+            else if (key < root.val)
+            {
+                root.left = DeleteNode(root.left, key);
+            }
+            else if (key > root.val)
+            {
+                root.right = DeleteNode(root.right, key);
+            }
+            return root;
+        }
+        public BinaryNode FindInOrderPredecessor(BinaryNode node)
+        {
+            if (node == null)
+            {
+                return null;
+            }
+            var successor = node.left;
+            while (successor.right != null)
+            {
+                successor = successor.right;
+            }
+            return successor;
+        }
         public bool isBST(BinaryNode head, int minValue = Int32.MinValue, int max = Int32.MaxValue)
         {
             if (head == null)
             { return true; }
-            if (head.Value < max && head.Value > minValue)
+            if (head.val < max && head.val > minValue)
             {
-                return isBST(head.left, minValue, head.Value - 1) && isBST(head.right, head.Value + 1, max);
+                return isBST(head.left, minValue, head.val - 1) && isBST(head.right, head.val + 1, max);
             }
             return false;
+        }
+        public IList<int> RightSideView(BinaryNode root)
+        {
+            var rightView = new List<int>();
+            if (root == null)
+                return rightView;
+            Queue<(BinaryNode, int)> nodeQueue = new Queue<(BinaryNode, int)>();
+            nodeQueue.Enqueue((root, 0));
+
+            Dictionary<int, List<BinaryNode>> nodesToCover = new Dictionary<int, List<BinaryNode>>();
+            while (nodeQueue.Count > 0)
+            {
+                var node = nodeQueue.Dequeue();
+                if (node.Item1.left != null)
+                {
+                    nodeQueue.Enqueue((node.Item1.left, node.Item2 + 1));
+                }
+                if (node.Item1.right != null)
+                {
+                    nodeQueue.Enqueue((node.Item1.right, node.Item2 + 1));
+                }
+                if (nodesToCover.TryGetValue(node.Item2, out var list))
+                {
+                    list.Add(node.Item1);
+                }
+                else
+                {
+                    nodesToCover[node.Item2] = new List<BinaryNode>() { node.Item1 };
+                }
+            }
+
+            for (var item = 0; item < nodesToCover.Count; item++)
+            {
+                rightView.Add(nodesToCover[item].Last().val);
+            }
+            return rightView;
         }
     }
 }
@@ -451,10 +536,10 @@ public class BinarySearchTree
         if (current == null)
             return;
         FindSwappedNumbersInorder(current.left, prevNode, ref first, ref second);
-        if (prevNode != null && prevNode.Value > current.Value)
+        if (prevNode != null && prevNode.val > current.val)
         {
-            if (first == null) first = prevNode.Value;
-            second = prevNode.Value;
+            if (first == null) first = prevNode.val;
+            second = prevNode.val;
         }
         else
         {
@@ -487,7 +572,7 @@ public class BinarySearchTree
         if (head == null)
             return false;
 
-        if (head.Value == targetNode.Value)
+        if (head.val == targetNode.val)
         {
             return true;
         }
@@ -505,18 +590,18 @@ public class BinarySearchTree
         if (head == null)
             return false;
 
-        if (head.Value == targetNode.Value)
+        if (head.val == targetNode.val)
         {
             return true;
         }
 
-        if (targetNode.Value < head.Value)
+        if (targetNode.val < head.val)
         {
             var elementFound = FindElementInBSTWithPath(head.left, targetNode, pathStack);
             if (elementFound) pathStack.Push(head);
             return elementFound;
         }
-        else if (targetNode.Value > head.Value)
+        else if (targetNode.val > head.val)
         {
             var elementFound = FindElementInBSTWithPath(head.right, targetNode, pathStack);
             if (elementFound) pathStack.Push(head);
@@ -531,11 +616,11 @@ public class BinarySearchTree
             return null;
 
 
-        if (node1.Value < head.Value && node2.Value < head.Value)
+        if (node1.val < head.val && node2.val < head.val)
         {
             return FindLowestCommonAncestorInBST(head.left, node1, node2);
         }
-        else if (node1.Value > head.Value && node2.Value > head.Value)
+        else if (node1.val > head.val && node2.val > head.val)
         {
             return FindLowestCommonAncestorInBST(head.left, node1, node2);
         }
@@ -684,5 +769,58 @@ public class BinarySearchTree
                 currentNode = currentNode.right;
             }
         }
+    }
+
+    public BinaryNode BuildTreePre(int[] preorder, int[] inorder)
+    {
+        if (inorder.Length == 0)
+            return null;
+
+        var inOrderIndexesDictionary = BuildHashMap(inorder);
+
+        return BuildTreePreOrder(inOrderIndexesDictionary, preorder, 0, preorder.Length - 1, inorder, 0, inorder.Length - 1);
+    }
+    public BinaryNode BuildTreePreOrder(Dictionary<int, int> inOrderIndexesDictionary, int[] preorder, int preStart, int preEnd, int[] inorder, int inStart, int inEnd)
+    {
+        if (inStart > inEnd)
+            return null;
+        var root = new BinaryNode(preorder[preStart]);
+        var inorderIndex = inOrderIndexesDictionary[preorder[preStart]];
+        var noOfLeftElementLength = inorderIndex - inStart;
+        root.left = BuildTreePreOrder(inOrderIndexesDictionary, preorder, preStart + 1, preStart + noOfLeftElementLength, inorder, inStart, inorderIndex - 1);
+        root.right = BuildTreePreOrder(inOrderIndexesDictionary, preorder, preStart + noOfLeftElementLength + 1, preEnd, inorder, inorderIndex + 1, inEnd);
+        return root;
+    }
+    public BinaryNode BuildTree(int[] inorder, int[] postorder)
+    {
+        if (inorder.Length == 0)
+            return null;
+
+        var inOrderIndexesDictionary = BuildHashMap(inorder);
+
+        return BuildTreePost(inOrderIndexesDictionary, postOrder, 0, postOrder.Length - 1, inorder, 0, inorder.Length - 1);
+    }
+
+    public BinaryNode BuildTreePost(Dictionary<int, int> inOrderIndexesDictionary, int[] postOrder, int postStart, int postEnd, int[] inorder, int inStart, int inEnd)
+    {
+        if (inStart > inEnd)
+            return null;
+        var root = new BinaryNode(postOrder[postEnd]);
+        var inorderIndex = inOrderIndexesDictionary[postOrder[postEnd]];
+        var noOfLeftLength = inorderIndex - inStart;
+        root.left = BuildTreePost(inOrderIndexesDictionary, postOrder, postStart, postStart + noOfLeftLength - 1, inorder, inStart, inorderIndex - 1);
+        root.right = BuildTreePost(inOrderIndexesDictionary, postOrder, postStart + noOfLeftLength, postEnd - 1, inorder, inorderIndex + 1, inEnd);
+        return root;
+    }
+
+    static Dictionary<int, int> BuildHashMap(int[] preorder)
+    {
+        var map = new Dictionary<int, int>();
+        for (int i = 0; i < preorder.Length; i++)
+        {
+            // Store value -> index mapping
+            map[preorder[i]] = i;
+        }
+        return map;
     }
 }

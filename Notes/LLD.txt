@@ -11,11 +11,11 @@ base -> inherited downcasting
 
 SO object creation can be costly 
 - it might require to get values from DB
-so if we want to create simillar object we can have a copy from the prototype
+so if we want to create similar object we can have a copy from the prototype
 
-open closed princple bird with a new type
+open closed principle bird with a new type
 
-Even if I have base ka object but derived ka ref type we wont be able to actually find propert of derived
+Even if I have base ka object but derived ka ref type we wont be able to actually find property of derived
 Dependency inversion - no 2 classes should directly talk to interface
 
 Practical factory
@@ -59,7 +59,7 @@ User and should be Noun(Man sign)
 Includes are not order relation Login -> Report 
 It should be Checkout includes check availability 
 
-Extends Mutiple ways to a same usecase
+Extends Multiple ways to a same use case
 
 
 Class Diagram
@@ -81,6 +81,30 @@ Composition - if any item can not live without the other
 
 
 TIC TAC TOE
-	Design is for Etity/ Web app/ Desktop App
+	Design is for Entity/ Web app/ Desktop App
+
+Parking Lot
+
+parking bill - Strategy design - hourly Daily or type of vehicle or demand basis (peak hours)  
+
+Strategy for Billing strategy
+Assigning strategy for spot
+Adapters for Payment
+they will automatically require a factory
+
+Class Diagram(Student vs batch)
+1 to many - Keep details in 1:1 then you will get the details of many in one class
+many to many - Keep details in 1:many then you will get the details of many in one class in every first type of object
+In any of the above the db will have relation db
+Imagine gate to operator relation
+
+
+Controller and Services should not be tightly coupled
+ login() will get a DTORequest And DTOResponse - Controller
+ but login() services should Get actual objects As your Login services now can be called by any controller
+
+HashMap cannot support Range Query
+
+
 	
 
