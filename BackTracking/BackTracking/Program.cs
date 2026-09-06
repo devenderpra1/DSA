@@ -38,28 +38,31 @@ public class Backtrack
     public void CreateAllSubArray(List<int> array)
     {
         if (array.Count > 0)
-            CreateSubArray(0, array, option, new bool[array.Count]);
+            CreateSubArray(0, array, new bool[array.Count]);
     }
 
-    private void CreateSubArray(int currentPlace, int totalNoOfPlaces, List<int> options, int[] finalNumber)
+    private void CreateSubArray(int currentElement, List<int> array, bool[] finalNumbers)
     {
-        if (currentPlace == totalNoOfPlaces)
+        if (currentElement == array.Count)
         {
             var sb = new StringBuilder();
-            foreach (var number in finalNumber)
+            foreach (var shouldBeIncluded in finalNumbers)
             {
-                sb.Append(number);
+                if (shouldBeIncluded)
+                {
+                    sb.Append(array[currentElement] + ",");
+                    Console.WriteLine("/n");
+
+                }
             }
             Console.WriteLine(sb.ToString());
         }
         else
         {
-            foreach (var number in options)
-            {
-                finalNumber[currentPlace] = number;
-                CreateSubArray(currentPlace + 1, totalNoOfPlaces, options, finalNumber);
-                finalNumber[currentPlace] = number;
-            }
+            finalNumbers[currentElement] = true;
+            CreateSubArray(currentElement + 1, array, finalNumbers);
+            finalNumbers[currentElement] = false;
+            CreateSubArray(currentElement + 1, array, finalNumbers);
         }
     }
 }
