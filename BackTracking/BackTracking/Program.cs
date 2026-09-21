@@ -16,12 +16,13 @@ public class Backtrack
     {
         if (currentPlace == totalNoOfPlaces)
         {
-            var sb = new StringBuilder();
-            foreach (var number in finalNumber)
+            int number = 0;
+            for (var index = finalNumber.Length; index > 0; index--)
             {
-                sb.Append(number);
+                number = number * 10 + finalNumber[index - 1];
+                //sb.Append(number);
             }
-            Console.WriteLine(sb.ToString());
+            //Console.WriteLine(sb.ToString());
         }
         else
         {
@@ -52,7 +53,6 @@ public class Backtrack
                 {
                     sb.Append(array[currentElement] + ",");
                     Console.WriteLine("/n");
-
                 }
             }
             Console.WriteLine(sb.ToString());
@@ -65,4 +65,32 @@ public class Backtrack
             CreateSubArray(currentElement + 1, array, finalNumbers);
         }
     }
+
+    public void CreateCombination(int noOfPlaces, int maxNumberToUse)
+    {
+        List<int> currentSelection = new List<int>();
+        if (noOfPlaces > 0)
+        {
+            CreateCombination(0,0, noOfPlaces, maxNumberToUse, currentSelection);
+        }
+    }
+
+    public void CreateCombination(int currentPosition, int  int noOfPlaces, int maxNumberToUse, List<int> currentSelection)
+    {
+        if (currentPosition == noOfPlaces)
+        {
+            for (int i = 0; i < maxNumberToUse; i++)
+            {
+                if ()
+            }
+        }
+        else
+        {
+            for (int i = currentPosition; i < maxNumberToUse; i++)
+            {
+                CreateCombination(i, noOfPlaces, maxNumberToUse, currentSelection);
+            }
+        }
+    }
+
 }
