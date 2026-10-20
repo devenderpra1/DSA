@@ -223,4 +223,8 @@ Indexing - array of first key in a block - To help with Binary Search Instead of
 WebSockets vs Http long poll(Is timeout happens)
 Document Db Key value pair to Wide column Database
 
+Kafka 
+- Publisher and Subscriber
+- Queue(Topic) can be done across system but maintaining the order across the system is not possible hence we do partition with most important subscriber(Partitioning logic) or we need to vertically scale the system.
+
 
