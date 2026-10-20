@@ -1,7 +1,0 @@
-
-Login System 
-	MFA
-	Oauth - Backend and FrontEnd
-
-Request managment
-

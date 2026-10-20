@@ -824,3 +824,57 @@ public class BinarySearchTree
         return map;
     }
 }
+
+*Definition for a binary tree node.
+
+* public class TreeNode
+{
+ *     public int val;
+ *     public TreeNode left;
+ *     public TreeNode right;
+ *     public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
+    {
+        *this.val = val;
+        *this.left = left;
+        *this.right = right;
+        *     }
+ * }
+*/
+public class Solution
+{
+    public int KthSmallest(TreeNode root, int k)
+    {
+        var num = 0;
+        var result = 0;
+        KthSmallest(root, k, ref num, ref result);
+        return result;
+    }
+    public void KthSmallest(TreeNode root, int k, ref int count, ref int result)
+    {
+        if (root == null)
+            return;
+
+        KthSmallest(root.left, k, ref count, ref result);
+        if (count == k) return;
+        count++;
+        if (count == k) result = root.val;
+        if (count == k) return;
+        KthSmallest(root.right, k, ref count, ref result);
+
+    }
+
+    public double MyPow(double x, int n)
+    {
+        long absPower = Math.Abs(x);
+        if (absPower == 1)
+        {
+            return x;
+        }
+        var halfPower = absPower / 2;
+        var value = MyPow(x, halfPower);
+        var result = value * value;
+        if (n % 2 != 0)
+            result *= x;
+        n < 0 ? (1 / result) : result;
+    }
+}

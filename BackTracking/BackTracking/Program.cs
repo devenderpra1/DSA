@@ -47,12 +47,11 @@ public class Backtrack
         if (currentElement == array.Count)
         {
             var sb = new StringBuilder();
-            foreach (var shouldBeIncluded in finalNumbers)
+            for (int i = 0; i < array.Count; i++)
             {
-                if (shouldBeIncluded)
+                if (finalNumbers[i])
                 {
-                    sb.Append(array[currentElement] + ",");
-                    Console.WriteLine("/n");
+                    sb.Append(array[i] + ",");
                 }
             }
             Console.WriteLine(sb.ToString());
@@ -68,29 +67,75 @@ public class Backtrack
 
     public void CreateCombination(int noOfPlaces, int maxNumberToUse)
     {
-        List<int> currentSelection = new List<int>();
+        int[] currentSelection = new int[noOfPlaces];
         if (noOfPlaces > 0)
         {
-            CreateCombination(0,0, noOfPlaces, maxNumberToUse, currentSelection);
+            CreateCombination(0, 0, noOfPlaces, maxNumberToUse, currentSelection);
         }
     }
 
-    public void CreateCombination(int currentPosition, int  int noOfPlaces, int maxNumberToUse, List<int> currentSelection)
+    public void CreateCombination(int currentPosition, int currentElement, int noOfPlaces, int maxNumberToUse, int[] currentSelection)
     {
         if (currentPosition == noOfPlaces)
         {
+            int finalNum = 0;
             for (int i = 0; i < maxNumberToUse; i++)
             {
-                if ()
+                finalNum = finalNum * 10 + currentSelection[i];
             }
         }
         else
         {
             for (int i = currentPosition; i < maxNumberToUse; i++)
             {
-                CreateCombination(i, noOfPlaces, maxNumberToUse, currentSelection);
+                currentSelection[currentPosition] = i;
+                CreateCombination(currentPosition + 1, i + 1, noOfPlaces, maxNumberToUse, currentSelection);
             }
         }
+    }
+
+    public int MinSubArrayLen(int target, int[] nums)
+    {
+        int[] prefixSum = new int[nums.Length + 1];
+
+        for (int i = 0; i < nums.Length; i++)
+        {
+            prefixSum[i + 1] = prefixSum[i] + nums[i];
+        }
+
+        int j = 0;
+        int k = 0;
+        var minLength = Int32.MaxValue;
+        var currentSum = 0;
+        while (j < prefixSum.Length && k < prefixSum.Length)
+        {
+            currentSum = prefixSum[k] - prefixSum[j];
+            if (currentSum == target)
+            {
+                var currentLength = k - j;
+                if (currentLength < minLength)
+                {
+                    minLength = currentLength;
+                }
+                j++;
+            }
+            else if (currentSum < target)
+            {
+                k++;
+            }
+            else
+            {
+                j++;
+            }
+        }
+        return minLength == Int32.MaxValue ? 0 : minLength;
+    }
+
+    public int MinSubArrayLenOfLengthK(int target, int[] nums)
+    {
+
+
+        return 0;
     }
 
 }

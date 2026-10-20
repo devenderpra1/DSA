@@ -1,0 +1,12 @@
+Dapper vs Entity Framework
+Async and Await and their working
+CORS
+Pagination on client side
+How we handle heavy load on client side can pagination be done on client side
+Idempotency
+Synchronisation context
+A circular dependency is a separate initialization issue
+Captive Dependency
+how aggregate works in Grouping
+Stored Procedures
+Range Queries
